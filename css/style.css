@@ -1,0 +1,151 @@
+.body {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.header {
+	box-sizing: border-box;
+	text-align: center;
+	padding: 20px 0px;
+	background-color: #ffffff;
+}
+
+.header__main{
+	font-size: 2.3em;
+}
+
+.schools {
+	box-sizing: border-box;
+	background-color: #bdc3c7;
+	font-size: 0px;
+	padding: 10px 0px 10px 20px;
+	max-width: 900px;
+	margin: 0px auto 0px auto;
+}
+
+.school__name {
+	font-size: 12px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: #ffffff;
+	padding-left: 20px;
+	padding-right: 20px;
+	min-height: 25px;
+	line-height: 25px;
+	display: inline-block;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.month {
+	text-align: center;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.schedule {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.schedule__item {
+	background-color: #bdc3c7;
+	position: relative;
+	box-sizing: border-box;
+	padding: 5px;
+	padding-left: 80px;
+	max-width: 900px;
+	margin: 0px auto 10px auto;
+}
+
+.schedule_school{
+
+}
+
+
+.schedule__date {
+	position: absolute;
+	top: 50%;
+	left: 30px;
+	display: inline;
+	font-size: 1.5em;
+	transform: translate(-15%, -50%);
+}
+
+.schedule__name {
+	padding: 5px;
+	font-size: 16px;
+	max-width: 600px
+}
+
+.schedule__lecturer {
+	font-size: 12px;
+	text-decoration: none;
+	display: inline-block;	
+	padding: 5px 10px 5px 10px
+}
+
+.schedule__materials {
+	font-size: 12px;
+	display: inline-block;	
+	padding: 5px 10px 5px 10px
+}
+
+.schedule__place {
+	font-size: 12px;
+	display: inline-block;	
+	padding: 5px 10px 5px 10px
+}
+
+.schedule__popup {
+	display: none;
+	z-index: 10;
+	width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+
+.popup__content {
+	margin:40px auto 0px auto;
+    max-width: 540px;
+    min-height: 350px;
+    padding:10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.popup__lecturer {
+	text-align: center;
+}
+
+.popup__close {
+	background: transparent;
+	cursor: pointer;
+	float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.2;
+    border: 0px;
+}
+
+.popup__close__icon {
+}
+
+.popup__img__wraper {
+	text-align: center;
+}
+.popup__img {
+	max-width: 30%;	
+}
+
+.popup__description {
+	padding: 10px 20px;	
+}
