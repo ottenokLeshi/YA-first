@@ -4,8 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Расписание</title>
-	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Oswald" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/modificators.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,16 +16,16 @@
 
 	<div class="school__select">
 		<div class="selects__item">
-			<input type="checkbox" id="interface" class="select__box school__intrface" checked>
-			<label for="interface">Школа разработки интерфейсов</label>
+			<input type="checkbox" id="interface" class="select__box school__interface" checked>
+			<label for="interface" class="school__interface"><span></span>Школа разработки интерфейсов</label>
 		</div>
 		<div class="selects__item">
 			<input type="checkbox" id="development" class="select__box school__development" checked>
-			<label for="development">Школа мобильной разработки</label>
+			<label for="development"><span></span>Школа мобильной разработки</label>
 		</div>
 		<div class="selects__item">
 			<input type="checkbox" id="design" class="select__box school__design" checked>
-			<label for="design">Школа мобильного дизайна</label>
+			<label for="design"><span></span>Школа мобильного дизайна</label>
 		</div>
 	</div>
 	<ul class="schedule">
@@ -33,147 +34,161 @@
 				<button class="popup__close">
 					<span class="popup__close__icon">x</span>
 				</button>
-				<h3 class="popup__lecturer"></h3>
+				<div class="popup__lecturer"></div>
 				<div class="popup__img__wraper">
 					<img class="popup__img" src="">
 				</div>
 				<p class="popup__description"></p>
 			</div>
 		</div>
-		<div class="month">Октябрь</div>
-		<li class="schedule__item">
-			<div class="school__name school__intrface">Школа разработки интерфейсов</div>
+		<li class="schedule__item schedule__item__passed">
+			<div class="school__name school__interface">Школа разработки интерфейсов</div>
 			<div class="school__name school__development">Школа мобильной разработки</div>
 			<div class="school__name school__design">Школа мобильного дизайна</div>
 			<div class="schedule__date">15</div>
+			<div class="schedule__month">Октября</div>
 			<div class="schedule__name">Инструмент под задачи</div>
 			<div class="schedule__lecturer"><a class="4" href="#">Сергей Томилов</a></div>
 			<div class="schedule__materials"><a target="_blank" href="https://events.yandex.ru/lib/talks/4268/">Материалы лекции</a></div>
 			<div class="schedule__place">Место проведения: Яндекс</div>
 		</li>
-		<li class="schedule__item">
+		<li class="schedule__item schedule__item__passed">
 			<div class="school__name school__design">Школа мобильного дизайна</div>
 			<div class="schedule__date">18</div>
+			<div class="schedule__month">Октября</div>
 			<div class="schedule__name">Идея, исследование, концепт (Часть 1)</div>
 			<div class="schedule__lecturer"><a class="1" href="#">Антон Тен</a></div>
 			<div class="schedule__materials"><a target="_blank" href="https://events.yandex.ru/lib/talks/4158/">Материалы лекции</a></div>
 			<div class="schedule__place">Место проведения: Яндекс</div>
 		</li>
-		<li class="schedule__item">
+		<li class="schedule__item schedule__item__passed">
 			<div class="school__name school__design">Школа мобильного дизайна</div>
 			<div class="schedule__date">18</div>
+			<div class="schedule__month">Октября</div>
 			<div class="schedule__name">Идея, исследование, концепт (Часть 2)</div>
 			<div class="schedule__lecturer"><a class="1" href="#">Антон Тен</a></div>
 			<div class="schedule__materials"><a target="_blank" href="https://events.yandex.ru/lib/talks/4159/">Материалы лекции</a></div>
 			<div class="schedule__place">Место проведения: Яндекс</div>
 		</li>
-		<li class="schedule__item">
+		<li class="schedule__item schedule__item__passed">
 			<div class="school__name school__development">Школа мобильной разработки</div>
 			<div class="schedule__date">19</div>
+			<div class="schedule__month">Октября</div>
 			<div class="schedule__name">Java Blitz (Часть 1)</div>
 			<div class="schedule__lecturer"><a class="19" href="#">Эдуард Мацуков</a></div>
 			<div class="schedule__materials"><a target="_blank" href="https://events.yandex.ru/lib/talks/4160/">Материалы лекции</a></div>
 			<div class="schedule__place">Место проведения: Яндекс</div>
 		</li>
-		<li class="schedule__item">
-			<div class="school__name school__intrface">Школа разработки интерфейсов</div>
+		<li class="schedule__item schedule__item__passed">
+			<div class="school__name school__interface">Школа разработки интерфейсов</div>
 			<div class="school__name school__development">Школа мобильной разработки</div>
 			<div class="school__name school__design">Школа мобильного дизайна</div>
 			<div class="schedule__date">19</div>
+			<div class="schedule__month">Октября</div>
 			<div class="schedule__name">Git & Workflow</div>
 			<div class="schedule__lecturer"><a class="20" href="#">Дмитрий Складнов</a></div>
 			<div class="schedule__materials"><a target="_blank" href="https://events.yandex.ru/lib/talks/4161/">Материалы лекции</a></div>
 			<div class="schedule__place">Место проведения: Яндекс</div>
 		</li>
 		<li class="schedule__item">
-			<div class="school__name school__intrface">Школа разработки интерфейсов</div>
+			<div class="school__name school__interface">Школа разработки интерфейсов</div>
 			<div class="schedule__date">20</div>
+			<div class="schedule__month">Октября</div>
 			<div class="schedule__name">Адаптивная вёрстка</div>
 			<div class="schedule__lecturer"><a class="13" href="#">Дмитрий Душкин</a></div>
-			<div class="schedule__materials"><a target="_blank" href="https://events.yandex.ru/lib/talks/4162/">Материалы лекции</a></div>
+			<div class="schedule__materials schedule__materials__notavail"><a href="#">Материалы лекции</a></div>
 			<div class="schedule__place">Место проведения: Яндекс</div>
 		</li>
 		<li class="schedule__item">
 			<div class="school__name school__development">Школа мобильной разработки</div>
 			<div class="schedule__date">25</div>
+			<div class="schedule__month">Октября</div>
 			<div class="schedule__name">Java Blitz (Часть 2)</div>
 			<div class="schedule__lecturer"><a class="19" href="#">Эдуард Мацуков</a></div>
-			<div class="schedule__materials"><a target="_blank" href="https://events.yandex.ru/lib/talks/4168/">Материалы лекции</a></div>
+			<div class="schedule__materials schedule__materials__notavail"><a href="#">Материалы лекции</a></div>
 			<div class="schedule__place">Место проведения: Яндекс</div>
 		</li>
 		<li class="schedule__item">
 			<div class="school__name school__development">Школа мобильной разработки</div>
 			<div class="schedule__date">25</div>
+			<div class="schedule__month">Октября</div>
 			<div class="schedule__name">MyFirstApp (Часть 1)</div>
 			<div class="schedule__lecturer"><a class="21" href="#">Роман Григорьев</a></div>
-			<div class="schedule__materials"><a target="_blank" href="https://events.yandex.ru/lib/talks/4169/">Материалы лекции</a></div>
+			<div class="schedule__materials schedule__materials__notavail"><a href="#">Материалы лекции</a></div>
 			<div class="schedule__place">Место проведения: Яндекс</div>
 		</li>
 		<li class="schedule__item">
 			<div class="school__name school__design">Школа мобильного дизайна</div>
 			<div class="schedule__date">25</div>
+			<div class="schedule__month">Октября</div>
 			<div class="schedule__name">Особенности проектирования мобильных интерфейсов</div>
 			<div class="schedule__lecturer"><a class="13" href="#">Дмитрий Душкин</a></div>
-			<div class="schedule__materials"><a target="_blank" href="https://events.yandex.ru/lib/talks/4167/">Материалы лекции</a></div>
+			<div class="schedule__materials schedule__materials__notavail"><a href="#">Материалы лекции</a></div>
 			<div class="schedule__place">Место проведения: Яндекс</div>
 		</li>
 		<li class="schedule__item">
-			<div class="school__name school__intrface">Школа разработки интерфейсов</div>
+			<div class="school__name school__interface">Школа разработки интерфейсов</div>
 			<div class="schedule__date">27</div>
+			<div class="schedule__month">Октября</div>
 			<div class="schedule__name">Работа с сенсорным пользовательским вводом</div>
 			<div class="schedule__lecturer"><a class="2" href="#">Васюнин Николай</a></div>
-			<div class="schedule__materials"><a target="_blank" href="https://events.yandex.ru/lib/talks/4172/">Материалы лекции</a></div>
+			<div class="schedule__materials schedule__materials__notavail"><a href="#">Материалы лекции</a></div>
 			<div class="schedule__place">Место проведения: Яндекс</div>
 		</li>
-		<div class="month">Ноябрь</div>
 		<li class="schedule__item">
 			<div class="school__name school__design">Школа мобильного дизайна</div>
 			<div class="schedule__date">1</div>
+			<div class="schedule__month">Ноября</div>
 			<div class="schedule__name">Продукт и платформа</div>
 			<div class="schedule__lecturer"><a class="3" href="#">Сергей Калабин</a></div>
-			<div class="schedule__materials"><a target="_blank" href="https://events.yandex.ru/lib/talks/4189/">Материалы лекции</a></div>
+			<div class="schedule__materials schedule__materials__notavail"><a href="#">Материалы лекции</a></div>
 			<div class="schedule__place">Место проведения: Яндекс</div>
 		</li>
 		<li class="schedule__item">
 			<div class="school__name school__design">Школа мобильного дизайна</div>
 			<div class="schedule__date">1</div>
+			<div class="schedule__month">Ноября</div>
 			<div class="schedule__name">Природа операционных систем</div>
 			<div class="schedule__lecturer"><a class="2" href="#">Васюнин Николай</a></div>
-			<div class="schedule__materials"><a target="_blank" href="https://events.yandex.ru/lib/talks/4190/">Материалы лекции</a></div>
+			<div class="schedule__materials schedule__materials__notavail"><a href="#">Материалы лекции</a></div>
 			<div class="schedule__place">Место проведения: Яндекс</div>
 		</li>
 		<li class="schedule__item">
 			<div class="school__name school__development">Школа мобильной разработки</div>
 			<div class="schedule__date">2</div>
+			<div class="schedule__month">Ноября</div>
 			<div class="schedule__name">MyFirstApp (Часть 2)</div>
 			<div class="schedule__lecturer"><a class="21" href="#">Роман Григорьев</a></div>
-			<div class="schedule__materials"><a target="_blank" href="https://events.yandex.ru/lib/talks/4195/">Материалы лекции</a></div>
+			<div class="schedule__materials schedule__materials__notavail"><a href="#">Материалы лекции</a></div>
 			<div class="schedule__place">Место проведения: Яндекс</div>
 		</li>
 		<li class="schedule__item">
 			<div class="school__name school__development">Школа мобильной разработки</div>
 			<div class="schedule__date">2</div>
+			<div class="schedule__month">Ноября</div>
 			<div class="schedule__name">ViewGroup</div>
 			<div class="schedule__lecturer"><a class="22" href="#">Алексей Щербинин</a></div>
-			<div class="schedule__materials"><a target="_blank" href="https://events.yandex.ru/lib/talks/4196/">Материалы лекции</a></div>
+			<div class="schedule__materials schedule__materials__notavail"><a href="#">Материалы лекции</a></div>
 			<div class="schedule__place">Место проведения: Яндекс</div>
 		</li>
 		<li class="schedule__item">
-			<div class="school__name school__intrface">Школа разработки интерфейсов</div>
+			<div class="school__name school__interface">Школа разработки интерфейсов</div>
 			<div class="schedule__date">3</div>
+			<div class="schedule__month">Ноября</div>
 			<div class="schedule__name">Мультимедиа: возможности браузера</div>
 			<div class="schedule__lecturer"><a class="14" href="#">Максим Васильев</a></div>
-			<div class="schedule__materials"><a target="_blank" href="https://events.yandex.ru/lib/talks/4197/">Материалы лекции</a></div>
+			<div class="schedule__materials schedule__materials__notavail"><a href="#">Материалы лекции</a></div>
 			<div class="schedule__place">Место проведения: Яндекс</div>
 		</li>
 		<li class="schedule__item">
-			<div class="school__name school__intrface">Школа разработки интерфейсов</div>
+			<div class="school__name school__interface">Школа разработки интерфейсов</div>
 			<div class="school__name school__development">Школа мобильной разработки</div>
 			<div class="school__name school__design">Школа мобильного дизайна</div>
 			<div class="schedule__date">4</div>
+			<div class="schedule__month">Ноября</div>
 			<div class="schedule__name">Инфраструктура веб-проектов</div>
 			<div class="schedule__lecturer"><a class="18" href="#">Прокопюк Андрей</a></div>
-			<div class="schedule__materials"><a target="_blank" href="https://events.yandex.ru/lib/talks/4323/">Материалы лекции</a></div>
+			<div class="schedule__materials schedule__materials__notavail"><a href="#">Материалы лекции</a></div>
 			<div class="schedule__place">Место проведения: Яндекс</div>
 		</li>
 	</ul>

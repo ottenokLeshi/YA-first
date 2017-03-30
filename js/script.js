@@ -1,9 +1,24 @@
 $(document).ready(() => {
 	const popup = $(".schedule__popup");
+	setDefaulToLinks();
 	setPopupListeners(popup);
 	setLinksListeners(popup);
 	setListenersToSchoolNames();
 })
+
+/*
+ * Запрещение всплытия при нажатии на ссылку
+ */
+const setDefaulToLinks = ()=> {
+	const links = $(".schedule__item:not(.schedule__item__passed)").find("a");
+	for (let i = 0; i < links.length; i++){
+		$(links[i]).click((event) => {
+			event.preventDefault();
+  			event.stopPropagation();
+		})
+	}
+
+};
 
 /**
  * Функция, проверяющая, скрыт ли блок
@@ -44,13 +59,8 @@ const setPopupListeners = (popup) => {
 const setLinksListeners = (popup) => {
 	const lecturersLinks = $(".schedule__lecturer").find("a");
 	for (let i = 0; i < lecturersLinks.length; i++){
-		$(lecturersLinks[i]).click(() => {
+		$(lecturersLinks[i]).click((event) => {
 			const lecturersId = $(event.target).attr("class");
-			/*
-			 * Запрещение всплытия при нажатии на ссылку
-			 */
-			event.preventDefault();
-  			event.stopPropagation();
   			setTextToPopup(popup, lecturersId);
   			showBlock(popup);
 		})
@@ -76,7 +86,7 @@ const setTextToPopup = (popup, lecturersId) => {
 const setListenersToSchoolNames = () => {
 	const schoolBoxes = $(".select__box");
 	for (let i = 0; i < schoolBoxes.length; i++){
-		$(schoolBoxes[i]).on("click", () => {
+		$(schoolBoxes[i]).on("click", (event) => {
 			const checkedBoxes = $("input.select__box:checked");
 			const uncheckedBoxes = $(".select__box:not(:checked)");
 
@@ -98,3 +108,4 @@ const setListenersToSchoolNames = () => {
 		})
 	}
 };
+			
