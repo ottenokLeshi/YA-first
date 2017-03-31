@@ -1,0 +1,88 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 798px) {
+	.schedule__item,
+	.school__select {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		padding-left: 10px;
+	}
+	.schedule__month,
+	.schedule__date {
+		font-size: 15px;
+	}
+	.school__name,
+	.selects__item {
+		display: block;
+		padding-left: 10%;
+	}
+	.schedule__item {
+		padding-top: 20px;
+	}
+	.header__main,
+	.popup__lecturer {
+		font-size: 20px;
+	}
+	.schedule__place {
+		display: block;
+		margin-bottom: 5px;
+	}
+	.schedule__date {
+		top: 12px;
+		left: 17px;
+	}
+	.schedule__month{
+		top: 2px;
+		left: 35px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

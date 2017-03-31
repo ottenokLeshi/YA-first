@@ -37,6 +37,7 @@
 }
 
 .selects__item label{
+	/*padding: 0px 12px 0px 12px;*/
 	cursor: pointer;
 }
 input[type="checkbox"] {
@@ -73,6 +74,7 @@ input[type="checkbox"]:checked + label span {
 	display: inline-block;
 	margin-right: 10px;
 	border: 2px solid #000000;
+	background-color: #D2D7D3;
 }
 
 .schedule {
@@ -104,7 +106,6 @@ input[type="checkbox"]:checked + label span {
 }
 
 .schedule__item__passed {
-	
 	background-color: #D2D7D3;
 }
 .schedule__date {
@@ -134,25 +135,33 @@ input[type="checkbox"]:checked + label span {
 	font-size: 15px;
 	text-decoration: none;
 	display: inline-block;	
-	padding: 5px 10px 5px 10px;
 	cursor: pointer;
 	background-color: #ffffff;
 	border: 2px solid #000000;
 	margin-right: 10px;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	padding: 5px 0px 5px 0px;
 
+}
+
+.schedule__lecturer a {
+	padding: 0px 10px 0px 10px;
 }
 
 .schedule__materials {
 	font-size: 15px;
 	display: inline-block;	
-	padding: 5px 10px 5px 10px;
+	padding: 5px 0px 5px 0px;
 	background-color: #ffffff;
 	border: 2px solid #000000;
 	margin-right: 10px;
 	margin-top: 5px;
 	margin-bottom: 5px;
+}
+
+.schedule__materials a {
+	padding: 0px 10px 0px 10px;
 }
 
 .schedule__materials__notavail{
@@ -179,7 +188,7 @@ input[type="checkbox"]:checked + label span {
 .popup__content {
 	margin: 20px auto 0px auto;
     max-width: 440px;
-    min-height: 350px;
+    min-height: 250px;
     padding: 0px;
     background-color: #fff;
 }

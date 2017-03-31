@@ -6,8 +6,9 @@
 	<title>Расписание</title>
 	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Oswald" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/modificators.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/modificators.css">
 </head>
 <body>
 	<div class="header">
@@ -15,18 +16,12 @@
 	</div>
 
 	<div class="school__select">
-		<div class="selects__item">
 			<input type="checkbox" id="interface" class="select__box school__interface" checked>
-			<label for="interface" class="school__interface"><span></span>Школа разработки интерфейсов</label>
-		</div>
-		<div class="selects__item">
+			<label class="selects__item" for="interface" class="school__interface"><span></span>Школа разработки интерфейсов</label>
 			<input type="checkbox" id="development" class="select__box school__development" checked>
-			<label for="development"><span></span>Школа мобильной разработки</label>
-		</div>
-		<div class="selects__item">
+			<label class="selects__item" for="development"><span></span>Школа мобильной разработки</label>
 			<input type="checkbox" id="design" class="select__box school__design" checked>
-			<label for="design"><span></span>Школа мобильного дизайна</label>
-		</div>
+			<label class="selects__item" for="design"><span></span>Школа мобильного дизайна</label>
 	</div>
 	<ul class="schedule">
 		<div class="schedule__popup hidden">
