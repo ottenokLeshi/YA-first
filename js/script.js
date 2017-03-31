@@ -1,4 +1,4 @@
-$(document).ready(() => {
+$(document).ready(function(){
 	const popup = $(".schedule__popup");
 	setDefaulToLinks();
 	setPopupListeners(popup);
@@ -9,10 +9,10 @@ $(document).ready(() => {
 /*
  * Запрещение всплытия при нажатии на ссылку
  */
-const setDefaulToLinks = ()=> {
+const setDefaulToLinks = function() {
 	const links = $(".schedule__item:not(.schedule__item__passed)").find("a");
 	for (let i = 0; i < links.length; i++){
-		$(links[i]).click((event) => {
+		$(links[i]).click(function(event) {
 			event.preventDefault();
   			event.stopPropagation();
 		})
@@ -23,32 +23,32 @@ const setDefaulToLinks = ()=> {
 /**
  * Функция, проверяющая, скрыт ли блок
  */
-const blockIsHidden = (block) => {
+const blockIsHidden = function(block){
 	return $(block).hasClass("hidden");
 }
 
 /**
  * Функция, скрывающая блок
  */
-const hideBlock = (block) => {
+const hideBlock = function(block){
 	$(block).addClass("hidden");
 };
 
 /**
  * Функция, восстанавливающая видимость блока
  */
-const showBlock = (block) => {
+const showBlock = function(block){
 	$(block).removeClass("hidden");
 }
 
 /**
  * Выставление слушателей на закрытие высплывающего окна
  */
-const setPopupListeners = (popup) => {
-	$(".popup__close__icon").click(() => {
+const setPopupListeners = function(popup){
+	$(".popup__close__icon").click(function(){
 		hideBlock(popup);
 	});
-	$(".schedule__popup").click(() => {
+	$(".schedule__popup").click(function(){
 		hideBlock(popup);
 	});
 };
@@ -56,10 +56,10 @@ const setPopupListeners = (popup) => {
 /**
  * Выставление слушателей на лекторов
  */
-const setLinksListeners = (popup) => {
+const setLinksListeners = function(popup) {
 	const lecturersLinks = $(".schedule__lecturer").find("a");
 	for (let i = 0; i < lecturersLinks.length; i++){
-		$(lecturersLinks[i]).click((event) => {
+		$(lecturersLinks[i]).click(function(event) {
 			const lecturersId = $(event.target).attr("class");
   			setTextToPopup(popup, lecturersId);
   			showBlock(popup);
@@ -70,7 +70,7 @@ const setLinksListeners = (popup) => {
 /**
  * Занесение информации о лекторе во всплывающее окно
  */
-const setTextToPopup = (popup, lecturersId) => {
+const setTextToPopup = function(popup, lecturersId) {
 	const lector = lecturers[lecturersId - 1];
 	const lectorName = lector.name;
 	const lectorDescr = lector.description;
@@ -83,10 +83,10 @@ const setTextToPopup = (popup, lecturersId) => {
 /**
  * Выставление слушателей для фильтрации по школам
  */
-const setListenersToSchoolNames = () => {
+const setListenersToSchoolNames = function() {
 	const schoolBoxes = $(".select__box");
 	for (let i = 0; i < schoolBoxes.length; i++){
-		$(schoolBoxes[i]).on("click", (event) => {
+		$(schoolBoxes[i]).on("click", function(event) {
 			const checkedBoxes = $("input.select__box:checked");
 			const uncheckedBoxes = $(".select__box:not(:checked)");
 
