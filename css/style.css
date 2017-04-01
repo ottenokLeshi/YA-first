@@ -1,51 +1,51 @@
 .hidden {
-	display: none;
+    display: none;
 }
-
+ 
 .header {
-	box-sizing: border-box;
-	text-align: center;
-	padding: 10px 0px;
-	background-color: #F22613;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 0px;
+    background-color: #F22613;
 }
-
+ 
 .header__main{
-	font-family: 'Oswald', sans-serif;
-	font-size: 40px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 40px;
 }
-
+ 
 .school__select {
-	box-sizing: border-box;
-	font-size: 0px;
-	padding: 5px 0px 5px 0px;
-	max-width: 900px;
-	padding-left: 80px;
-	margin: 10px auto 10px auto;
+    box-sizing: border-box;
+    font-size: 0px;
+    padding: 5px 0px 5px 0px;
+    max-width: 900px;
+    padding-left: 0px;
+    margin: 10px auto 10px auto;
 }
-
+ 
 .selects__item {
-	font-family: 'Oswald', sans-serif;
-	font-size: 14px;
-	display: inline-block;
-	padding: 5px 12px 5px 12px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	margin-right: 10px;
-	background-color: #ffffff;
-	cursor: pointer;
-	border: 2px solid #000000;
+    font-family: 'Francois One', sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    padding: 5px 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    cursor: pointer;
+    border: 2px solid #000000;
 }
-
+ 
 .selects__item label{
-	/*padding: 0px 12px 0px 12px;*/
-	cursor: pointer;
+    /*padding: 0px 12px 0px 12px;*/
+    cursor: pointer;
 }
 input[type="checkbox"] {
-	display:none;
+    display:none;
 }
-
+ 
 input[type="checkbox"] + label span {
-	display: inline-block;
+    display: inline-block;
     width: 15px;
     height: 15px;
     cursor: pointer;
@@ -56,157 +56,153 @@ input[type="checkbox"] + label span {
 input[type="checkbox"]:checked + label span {
     background: url("../img/checked.png") top no-repeat;
 }
-
+ 
 .select__box {
-	vertical-align: bottom;
+    vertical-align: bottom;
 }
-
+ 
 .school__name {
-	font-family: 'Oswald', sans-serif;
-	font-size: 14px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	background-color: #ffffff;
-	padding-left: 20px;
-	padding-right: 20px;
-	min-height: 25px;
-	line-height: 25px;
-	display: inline-block;
-	margin-right: 10px;
-	border: 2px solid #000000;
-	background-color: #D2D7D3;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    margin-right: 10px;
+    border: 2px solid #000000;
+    background-color: #D2D7D3;
 }
-
+ 
 .schedule {
-	list-style: none;
-	padding: 0px;
-	margin: 0px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
-
+ 
 .schedule__item {
-	font-family: 'Oswald', sans-serif;
-	position: relative;
-	box-sizing: border-box;
-	padding: 5px;
-	padding-left: 80px;
-	padding-right: 80px;
-	max-width: 900px;
-	margin: 0px auto 0px auto;
-	font-size: 0px;
-	border-bottom: 2px solid black;
+	font-family: 'Fjalla One', sans-serif;
+    position: relative;
+    box-sizing: border-box;
+    padding: 5px;
+    padding-left: 80px;
+    max-width: 900px;
+    margin: 0px auto 0px auto;
+    font-size: 0px;
+    border-bottom: 2px solid black;
 }
 .schedule__item:first-of-type {
-	border-top: 2px solid black;
+    border-top: 2px solid black;
 }
-
+ 
 .schedule__item a {
-	cursor: pointer;
-	color: #000000;
-	text-decoration:none;
+    cursor: pointer;
+    color: #000000;
+    text-decoration:none;
 }
-
+ 
 .schedule__item__passed {
-	background-color: #D2D7D3;
+    background-color: #D2D7D3;
 }
 .schedule__date {
-	font-family: 'Fjalla One', sans-serif;
-	position: absolute;
-	top: 50%;
-	left: 30px;
-	display: inline;
-	font-size: 30px;
-	transform: translate(-15%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    display: inline;
+    font-size: 30px;
+    transform: translate(-15%, -50%);
 }
-
+ 
 .schedule__month {
-	font-size: 16px;
-	position: absolute;
-	top: 65%;
-	left: 15px;
-	display: inline;
+    font-size: 15px;
+    position: absolute;
+    top: 65%;
+    left: 1%;
+    display: inline;
 }
-
+ 
 .schedule__name {
-	padding: 5px;
-	font-size: 20px;
+    padding: 5px;
+    font-size: 20px;
 }
-
+ 
 .schedule__lecturer {
-	font-size: 15px;
-	text-decoration: none;
-	display: inline-block;	
-	cursor: pointer;
-	background-color: #ffffff;
-	border: 2px solid #000000;
-	margin-right: 10px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	padding: 5px 0px 5px 0px;
-
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block; 
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px 0px 5px 0px;
+ 
 }
-
+ 
 .schedule__lecturer a {
-	padding: 0px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
 }
-
+ 
 .schedule__materials {
-	font-size: 15px;
-	display: inline-block;	
-	padding: 5px 0px 5px 0px;
-	background-color: #ffffff;
-	border: 2px solid #000000;
-	margin-right: 10px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+    font-size: 15px;
+    display: inline-block; 
+    padding: 5px 0px 5px 0px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
-
+ 
 .schedule__materials a {
-	padding: 0px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
 }
-
+ 
 .schedule__materials__notavail{
-	opacity: 0.5;
+    opacity: 0.5;
 }
-
+ 
 .schedule__place {
-	font-size: 15px;
-	display: inline-block;	
-	padding: 5px 10px 5px 10px;
+    font-size: 15px;
+    display: inline-block; 
+    padding: 5px 10px 5px 10px;
 }
-
+ 
 .schedule__popup {
-	font-family: 'Oswald', sans-serif;
-	z-index: 10;
-	width:100%;
+	font-family: 'Fjalla One', sans-serif;
+    z-index: 10;
+    width:100%;
     min-height:100%;
     background-color: rgba(0,0,0,0.7);
     overflow:hidden;
     position:fixed;
     top:0px;
 }
-
+ 
 .popup__content {
-	margin: 20px auto 0px auto;
+    margin: 20px auto 0px auto;
     max-width: 440px;
     min-height: 250px;
     padding: 0px;
     background-color: #fff;
 }
-
+ 
 .popup__lecturer {
-	font-family: 'Oswald', sans-serif;
-	font-size: 40px;
-	box-sizing: border-box;
-	text-align: center;
-	padding: 10px 0px;
-	margin-bottom: 10px;
-	background-color: #F22613;
+	font-family: 'Francois One', sans-serif;
+    font-size: 35px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    background-color: #F22613;
 }
-
+ 
 .popup__close {
-	background: transparent;
-	cursor: pointer;
-	float: right;
+    background: transparent;
+    cursor: pointer;
+    float: right;
     font-size: 21px;
     font-weight: bold;
     line-height: 1;
@@ -214,18 +210,18 @@ input[type="checkbox"]:checked + label span {
     opacity: 0.7;
     border: 0px;
 }
-
+ 
 .popup__close__icon{
-	color: #000;
+    color: #000;
 }
-
+ 
 .popup__img__wraper {
-	text-align: center;
+    text-align: center;
 }
 .popup__img {
-	max-width: 30%;	
+    max-width:45%;
 }
-
+ 
 .popup__description {
-	padding: 10px 20px;	
+    padding: 10px 20px;
 }
