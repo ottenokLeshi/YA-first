@@ -37,7 +37,6 @@
 }
  
 .selects__item label{
-    /*padding: 0px 12px 0px 12px;*/
     cursor: pointer;
 }
 input[type="checkbox"] {

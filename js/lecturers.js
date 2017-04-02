@@ -196,3 +196,5 @@ const lecturers = [
 		link: "https://events.yandex.ru/lib/people/10682529/"
 	}
 ];
+
+module.exports = lecturers;

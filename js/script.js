@@ -1,3 +1,10 @@
+const lecturers = require('./lecturers.js');
+const $ = require('jquery');
+require('../css/normalize.css');
+require('../css/style.css');
+require('../css/media.css');
+require('../css/modificators.css');
+
 $(document).ready(function(){
 	const popup = $(".schedule__popup");
 	setDefaulToLinks();
