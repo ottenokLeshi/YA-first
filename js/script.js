@@ -14,7 +14,7 @@ $(document).ready(function(){
 })
 
 /*
- * Запрещение всплытия при нажатии на ссылку
+ * Запрещение всплытия при нажатии на пустую ссылку
  */
 const setDefaulToLinks = function() {
 	const links = $(".schedule__item:not(.schedule__item__passed)").find("a");
@@ -24,7 +24,6 @@ const setDefaulToLinks = function() {
   			event.stopPropagation();
 		})
 	}
-
 };
 
 /**
@@ -52,10 +51,7 @@ const showBlock = function(block){
  * Выставление слушателей на закрытие высплывающего окна
  */
 const setPopupListeners = function(popup){
-	$(".popup__close__icon").click(function(){
-		hideBlock(popup);
-	});
-	$(".schedule__popup").click(function(){
+	$(".popup__close").click(function(){
 		hideBlock(popup);
 	});
 };

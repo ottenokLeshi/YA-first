@@ -448,6 +448,12 @@ function updateLink(linkElement, options, obj) {
 /* 2 */
 /***/ (function(module, exports) {
 
+/**
+ * Массив данных о лекторах
+ *
+ */
+
+
 const lecturers = [
 	{
 		id: 1,
@@ -11033,7 +11039,7 @@ $(document).ready(function(){
 })
 
 /*
- * Запрещение всплытия при нажатии на ссылку
+ * Запрещение всплытия при нажатии на пустую ссылку
  */
 const setDefaulToLinks = function() {
 	const links = $(".schedule__item:not(.schedule__item__passed)").find("a");
@@ -11043,7 +11049,6 @@ const setDefaulToLinks = function() {
   			event.stopPropagation();
 		})
 	}
-
 };
 
 /**
@@ -11071,10 +11076,7 @@ const showBlock = function(block){
  * Выставление слушателей на закрытие высплывающего окна
  */
 const setPopupListeners = function(popup){
-	$(".popup__close__icon").click(function(){
-		hideBlock(popup);
-	});
-	$(".schedule__popup").click(function(){
+	$(".popup__close").click(function(){
 		hideBlock(popup);
 	});
 };
@@ -13063,7 +13065,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "/* Small Devices, Tablets */\r\n@media only screen and (max-width : 798px) {\r\n\t.schedule__item,\r\n\t.school__select {\r\n\t\tposition: relative;\r\n\t\tmargin: 0;\r\n\t\tpadding: 0;\r\n\t\tpadding-left: 10px;\r\n\t}\r\n\t.schedule__month,\r\n\t.schedule__date {\r\n\t\tfont-size: 15px;\r\n\t}\r\n\t.school__name,\r\n\t.selects__item {\r\n\t\tdisplay: block;\r\n\t\tpadding-left: 10%;\r\n\t}\r\n\t.schedule__item {\r\n\t\tpadding-top: 20px;\r\n\t}\r\n\t.header__main,\r\n\t.popup__lecturer {\r\n\t\tfont-size: 20px;\r\n\t}\r\n\t.schedule__place {\r\n\t\tdisplay: block;\r\n\t\tmargin-bottom: 5px;\r\n\t}\r\n\t.schedule__date {\r\n\t\ttop: 12px;\r\n\t\tleft: 17px;\r\n\t}\r\n\t.schedule__month{\r\n\t\ttop: 2px;\r\n\t\tleft: 35px;\r\n\t}\r\n}", ""]);
+exports.push([module.i, "/* Small Devices, Tablets */\r\n@media only screen and (max-width : 798px) {\r\n\t.schedule__item,\r\n\t.school__select {\r\n\t\tposition: relative;\r\n\t\tmargin: 0;\r\n\t\tpadding: 0;\r\n\t\tpadding-left: 10px;\r\n\t}\r\n\t.schedule__month,\r\n\t.schedule__date {\r\n\t\tfont-size: 15px;\r\n\t}\r\n\t.school__name,\r\n\t.selects__item {\r\n\t\tdisplay: block;\r\n\t\tpadding-left: 10%;\r\n\t}\r\n\t.schedule__item {\r\n\t\tpadding-top: 20px;\r\n\t}\r\n\t.header__main,\r\n\t.popup__lecturer {\r\n\t\tfont-size: 20px;\r\n\t}\r\n\t.schedule__place {\r\n\t\tdisplay: block;\r\n\t\tmargin-bottom: 5px;\r\n\t}\r\n\t.schedule__date {\r\n\t\ttop: 12px;\r\n\t\tleft: 17px;\r\n\t}\r\n\t.schedule__month{\r\n\t\ttop: 2px;\r\n\t\tleft: 35px;\r\n\t}\r\n\t.popup__close {\r\n    padding: 0px 10px;\r\n\t}\r\n\r\n}", ""]);
 
 // exports
 
@@ -13105,7 +13107,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".hidden {\n    display: none;\n}\n \n.header {\n    box-sizing: border-box;\n    text-align: center;\n    padding: 10px 0px;\n    background-color: #F22613;\n}\n \n.header__main{\n    font-family: 'Fjalla One', sans-serif;\n    font-size: 40px;\n}\n \n.school__select {\n    box-sizing: border-box;\n    font-size: 0px;\n    padding: 5px 0px 5px 0px;\n    max-width: 900px;\n    padding-left: 0px;\n    margin: 10px auto 10px auto;\n}\n \n.selects__item {\n    font-family: 'Francois One', sans-serif;\n    font-size: 14px;\n    display: inline-block;\n    padding: 5px 6px;\n    margin-top: 5px;\n    margin-bottom: 5px;\n    margin-right: 10px;\n    background-color: #ffffff;\n    cursor: pointer;\n    border: 2px solid #000000;\n}\n \n.selects__item label{\n    cursor: pointer;\n}\ninput[type=\"checkbox\"] {\n    display:none;\n}\n \ninput[type=\"checkbox\"] + label span {\n    display: inline-block;\n    width: 15px;\n    height: 15px;\n    cursor: pointer;\n    margin: 0px 10px 0 0;\n    vertical-align: middle;\n    border: 2px solid #000000;\n}\ninput[type=\"checkbox\"]:checked + label span {\n    background: url(" + __webpack_require__(18) + ") top no-repeat;\n}\n \n.select__box {\n    vertical-align: bottom;\n}\n \n.school__name {\n    font-size: 14px;\n    margin-top: 5px;\n    margin-bottom: 5px;\n    padding-left: 10px;\n    padding-right: 10px;\n    min-height: 25px;\n    line-height: 25px;\n    display: inline-block;\n    margin-right: 10px;\n    border: 2px solid #000000;\n    background-color: #D2D7D3;\n}\n \n.schedule {\n    list-style: none;\n    padding: 0px;\n    margin: 0px;\n}\n \n.schedule__item {\n\tfont-family: 'Fjalla One', sans-serif;\n    position: relative;\n    box-sizing: border-box;\n    padding: 5px;\n    padding-left: 80px;\n    max-width: 900px;\n    margin: 0px auto 0px auto;\n    font-size: 0px;\n    border-bottom: 2px solid black;\n}\n.schedule__item:first-of-type {\n    border-top: 2px solid black;\n}\n \n.schedule__item a {\n    cursor: pointer;\n    color: #000000;\n    text-decoration:none;\n}\n \n.schedule__item__passed {\n    background-color: #D2D7D3;\n}\n.schedule__date {\n    position: absolute;\n    top: 50%;\n    left: 30px;\n    display: inline;\n    font-size: 30px;\n    transform: translate(-15%, -50%);\n}\n \n.schedule__month {\n    font-size: 15px;\n    position: absolute;\n    top: 65%;\n    left: 1%;\n    display: inline;\n}\n \n.schedule__name {\n    padding: 5px;\n    font-size: 20px;\n}\n \n.schedule__lecturer {\n    font-size: 15px;\n    text-decoration: none;\n    display: inline-block; \n    cursor: pointer;\n    background-color: #ffffff;\n    border: 2px solid #000000;\n    margin-right: 10px;\n    margin-top: 5px;\n    margin-bottom: 5px;\n    padding: 5px 0px 5px 0px;\n \n}\n \n.schedule__lecturer a {\n    padding: 0px 10px 0px 10px;\n}\n \n.schedule__materials {\n    font-size: 15px;\n    display: inline-block; \n    padding: 5px 0px 5px 0px;\n    background-color: #ffffff;\n    border: 2px solid #000000;\n    margin-right: 10px;\n    margin-top: 5px;\n    margin-bottom: 5px;\n}\n \n.schedule__materials a {\n    padding: 0px 10px 0px 10px;\n}\n \n.schedule__materials__notavail{\n    opacity: 0.5;\n}\n \n.schedule__place {\n    font-size: 15px;\n    display: inline-block; \n    padding: 5px 10px 5px 10px;\n}\n \n.schedule__popup {\n\tfont-family: 'Fjalla One', sans-serif;\n    z-index: 10;\n    width:100%;\n    min-height:100%;\n    background-color: rgba(0,0,0,0.7);\n    overflow:hidden;\n    position:fixed;\n    top:0px;\n}\n \n.popup__content {\n    margin: 20px auto 0px auto;\n    max-width: 440px;\n    min-height: 250px;\n    padding: 0px;\n    background-color: #fff;\n}\n \n.popup__lecturer {\n\tfont-family: 'Francois One', sans-serif;\n    font-size: 35px;\n    box-sizing: border-box;\n    text-align: center;\n    padding: 10px 0px;\n    margin-bottom: 10px;\n    background-color: #F22613;\n}\n \n.popup__close {\n    background: transparent;\n    cursor: pointer;\n    float: right;\n    font-size: 21px;\n    font-weight: bold;\n    line-height: 1;\n    text-shadow: 0 1px 0 #000;\n    opacity: 0.7;\n    border: 0px;\n}\n \n.popup__close__icon{\n    color: #000;\n}\n \n.popup__img__wraper {\n    text-align: center;\n}\n.popup__img {\n    max-width:45%;\n}\n \n.popup__description {\n    padding: 10px 20px;\n}", ""]);
+exports.push([module.i, ".hidden {\n    display: none;\n}\n \n.header {\n    box-sizing: border-box;\n    text-align: center;\n    padding: 10px 0px;\n    background-color: #F22613;\n}\n \n.header__main{\n    font-family: 'Fjalla One', sans-serif;\n    font-size: 40px;\n}\n \n.school__select {\n    box-sizing: border-box;\n    font-size: 0px;\n    padding: 5px 0px 5px 0px;\n    max-width: 900px;\n    padding-left: 0px;\n    margin: 10px auto 10px auto;\n}\n \n.selects__item {\n    font-family: 'Francois One', sans-serif;\n    font-size: 14px;\n    display: inline-block;\n    padding: 5px 6px;\n    margin-top: 5px;\n    margin-bottom: 5px;\n    margin-right: 10px;\n    background-color: #ffffff;\n    cursor: pointer;\n    border: 2px solid #000000;\n}\n \n.selects__item label{\n    cursor: pointer;\n}\ninput[type=\"checkbox\"] {\n    display:none;\n}\n \ninput[type=\"checkbox\"] + label span {\n    display: inline-block;\n    width: 15px;\n    height: 15px;\n    cursor: pointer;\n    margin: 0px 10px 0 0;\n    vertical-align: middle;\n    border: 2px solid #000000;\n}\ninput[type=\"checkbox\"]:checked + label span {\n    background: url(" + __webpack_require__(18) + ") top no-repeat;\n}\n \n.select__box {\n    vertical-align: bottom;\n}\n \n.school__name {\n    font-size: 14px;\n    margin-top: 5px;\n    margin-bottom: 5px;\n    padding-left: 10px;\n    padding-right: 10px;\n    min-height: 25px;\n    line-height: 25px;\n    display: inline-block;\n    margin-right: 10px;\n    border: 2px solid #000000;\n    background-color: #D2D7D3;\n}\n \n.schedule {\n    list-style: none;\n    padding: 0px;\n    margin: 0px;\n}\n \n.schedule__item {\n\tfont-family: 'Fjalla One', sans-serif;\n    position: relative;\n    box-sizing: border-box;\n    padding: 5px;\n    padding-left: 80px;\n    max-width: 900px;\n    margin: 0px auto 0px auto;\n    font-size: 0px;\n    border-bottom: 2px solid black;\n}\n.schedule__item:first-of-type {\n    border-top: 2px solid black;\n}\n \n.schedule__item a {\n    cursor: pointer;\n    color: #000000;\n    text-decoration:none;\n    padding: 10px 10px 10px 10px;\n}\n \n.schedule__item__passed {\n    background-color: #D2D7D3;\n}\n.schedule__date {\n    position: absolute;\n    top: 50%;\n    left: 30px;\n    display: inline;\n    font-size: 30px;\n    transform: translate(-15%, -50%);\n}\n \n.schedule__month {\n    font-size: 15px;\n    position: absolute;\n    top: 65%;\n    left: 1%;\n    display: inline;\n}\n \n.schedule__name {\n    padding: 5px;\n    font-size: 20px;\n}\n \n.schedule__lecturer {\n    font-size: 15px;\n    text-decoration: none;\n    display: inline-block; \n    cursor: pointer;\n    background-color: #ffffff;\n    border: 2px solid #000000;\n    margin-right: 10px;\n    margin-top: 5px;\n    margin-bottom: 5px;\n    padding: 5px 0px 5px 0px;\n \n}\n \n.schedule__materials {\n    font-size: 15px;\n    display: inline-block; \n    padding: 5px 0px 5px 0px;\n    background-color: #ffffff;\n    border: 2px solid #000000;\n    margin-right: 10px;\n    margin-top: 5px;\n    margin-bottom: 5px;\n}\n \n.schedule__materials__notavail{\n    opacity: 0.5;\n}\n \n.schedule__place {\n    font-size: 15px;\n    display: inline-block; \n    padding: 5px 10px 5px 10px;\n}\n \n.schedule__popup {\n\tfont-family: 'Fjalla One', sans-serif;\n    z-index: 10;\n    width:100%;\n    min-height:100%;\n    background-color: rgba(0,0,0,0.7);\n    overflow:hidden;\n    position:fixed;\n    top:0px;\n}\n \n.popup__content {\n    margin: 20px auto 0px auto;\n    max-width: 440px;\n    min-height: 250px;\n    padding: 0px;\n    background-color: #fff;\n}\n \n.popup__lecturer {\n\tfont-family: 'Francois One', sans-serif;\n    font-size: 35px;\n    box-sizing: border-box;\n    text-align: center;\n    padding: 10px 0px;\n    margin-bottom: 10px;\n    background-color: #F22613;\n}\n \n.popup__close {\n    background: transparent;\n    cursor: pointer;\n    float: right;\n    font-size: 21px;\n    font-weight: bold;\n    line-height: 2;\n    padding: 2px 15px;\n    text-shadow: 0 1px 0 #000;\n    opacity: 0.7;\n    border: 0px;\n}\n \n.popup__close__icon{\n    color: #000;\n}\n \n.popup__img__wraper {\n    text-align: center;\n}\n.popup__img {\n    max-width:45%;\n}\n \n.popup__description {\n    padding: 10px 20px;\n}", ""]);
 
 // exports
 

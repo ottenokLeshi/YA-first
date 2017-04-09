@@ -99,6 +99,7 @@ input[type="checkbox"]:checked + label span {
     cursor: pointer;
     color: #000000;
     text-decoration:none;
+    padding: 10px 10px 10px 10px;
 }
  
 .schedule__item__passed {
@@ -140,10 +141,6 @@ input[type="checkbox"]:checked + label span {
  
 }
  
-.schedule__lecturer a {
-    padding: 0px 10px 0px 10px;
-}
- 
 .schedule__materials {
     font-size: 15px;
     display: inline-block; 
@@ -153,10 +150,6 @@ input[type="checkbox"]:checked + label span {
     margin-right: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
-}
- 
-.schedule__materials a {
-    padding: 0px 10px 0px 10px;
 }
  
 .schedule__materials__notavail{
@@ -204,7 +197,8 @@ input[type="checkbox"]:checked + label span {
     float: right;
     font-size: 21px;
     font-weight: bold;
-    line-height: 1;
+    line-height: 2;
+    padding: 2px 15px;
     text-shadow: 0 1px 0 #000;
     opacity: 0.7;
     border: 0px;

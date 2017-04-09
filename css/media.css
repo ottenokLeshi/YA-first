@@ -35,4 +35,8 @@
 		top: 2px;
 		left: 35px;
 	}
+	.popup__close {
+    padding: 0px 10px;
+	}
+
 }
