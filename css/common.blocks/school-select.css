@@ -1,0 +1,53 @@
+.school-select {
+	box-sizing: border-box;
+	font-size: 0;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+.school-select-wrapper {
+	display: flex;
+    justify-content: center;
+	margin:auto;
+}
+
+.school-select__input {
+	background-color: yellow;
+}
+
+.school-select__input_hidden {
+	display: none;
+}
+
+.school-select__name {
+	cursor: pointer;
+	margin: 5px;
+	padding: 0 5px;
+	font-size: 1rem;
+	border: 2px solid #000000;
+}
+
+.school-select__box {
+	vertical-align: middle;
+	width:15px;
+	height: 15px;
+	margin: 5px 5px;
+	margin-right: 10px;
+	border: 2px solid #000000;
+	display: inline-block;
+}
+
+.school-select__input:checked + .school-select__name .school-select__box{
+    background: url("../../img/checked.png") top no-repeat;
+}
+
+@media only screen and (max-width : 798px) {
+	.school-select-wrapper {
+		display: block;
+	}
+
+	.school-select__name {
+		display: block;
+	}
+}

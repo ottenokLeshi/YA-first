@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -146,7 +146,7 @@ function toComment(sourceMap) {
   return '/*# ' + data + ' */';
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10).Buffer))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(11).Buffer))
 
 /***/ }),
 /* 1 */
@@ -186,7 +186,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(17);
+	fixUrls = __webpack_require__(19);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -10922,7 +10922,7 @@ return jQuery;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(11);
+var content = __webpack_require__(12);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(1)(content, {});
@@ -10931,8 +10931,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../node_modules/css-loader/index.js!./media.css", function() {
-			var newContent = require("!!../node_modules/css-loader/index.js!./media.css");
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./header.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./header.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -10948,7 +10948,7 @@ if(false) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(12);
+var content = __webpack_require__(13);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(1)(content, {});
@@ -10957,8 +10957,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../node_modules/css-loader/index.js!./modificators.css", function() {
-			var newContent = require("!!../node_modules/css-loader/index.js!./modificators.css");
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./schedule-popup.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./schedule-popup.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -10974,7 +10974,59 @@ if(false) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(13);
+var content = __webpack_require__(14);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(1)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./schedule.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./schedule.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(15);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(1)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./school-select.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./school-select.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(16);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(1)(content, {});
@@ -10994,51 +11046,27 @@ if(false) {
 }
 
 /***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(14);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(1)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../node_modules/css-loader/index.js!./style.css", function() {
-			var newContent = require("!!../node_modules/css-loader/index.js!./style.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 const lecturers = __webpack_require__(2);
 const $ = __webpack_require__(3);
-__webpack_require__(6);
-__webpack_require__(7);
+__webpack_require__(8);
 __webpack_require__(4);
+__webpack_require__(7);
+__webpack_require__(6);
 __webpack_require__(5);
 
 $(document).ready(function(){
-	const $popup = $(".schedule__popup");
-	const $lecturersLinks = $(".schedule__lecturer").find("a");
-	const $allLinks = $(".schedule__item:not(.schedule__item__passed)").find("a");
-	const $popupCloseButton = $(".popup__close");
-	const $popupLecturer = $(".popup__lecturer");
-	const $popupDescription = $(".popup__description");
-	const $popupImg = $(".popup__img");
-	const $schoolBoxes = $(".select__box");
+	const $lecturersLinks = $(".schedule-item__lecturer").find("a");
+	const $schoolBoxes = $(".school-select__input");
+	const $allLinks = $(".schedule-item").find("a");
+
+	const $popup = $(".schedule-popup");
+	const $popupCloseButton = $(".popup_close_yes");
+	const $popupLecturer = $(".schedule-popup__lecturer");
+	const $popupDescription = $(".schedule-popup__description");
+	const $popupImg = $(".schedule-popup__img");
 
 	setDefaulToLinks($allLinks);
 	setPopupListeners($popup, $popupCloseButton);
@@ -11070,7 +11098,7 @@ const setDefaulToLinks = function($allLinks) {
  *
  */
 const blockIsHidden = function($block){
-	return $($block).hasClass("hidden");
+	return $($block).hasClass("schedule-item_hidden");
 }
 
 /**
@@ -11080,7 +11108,7 @@ const blockIsHidden = function($block){
  *
  */
 const hideBlock = function($block){
-	$($block).addClass("hidden");
+	$($block).addClass("schedule-item_hidden");
 };
 
 /**
@@ -11090,7 +11118,7 @@ const hideBlock = function($block){
  *
  */
 const showBlock = function($block){
-	$($block).removeClass("hidden");
+	$($block).removeClass("schedule-item_hidden");
 }
 
 /**
@@ -11101,9 +11129,14 @@ const showBlock = function($block){
  *
  */
 const setPopupListeners = function($popup, $popupCloseButton){
-	$popupCloseButton.click(function(){
-		hideBlock($popup);
+	$popup.click(function(event){
+		$target = $(event.target)
+		if ($target.hasClass("popup_close_yes") || $target.hasClass("schedule-popup") || $target.hasClass("popup_close-icon")){
+			hideBlock($popup);
+			$("html").css("overflow", "auto");
+		}
 	});
+	$('')
 };
 
 /**
@@ -11116,9 +11149,10 @@ const setPopupListeners = function($popup, $popupCloseButton){
  */
 const setLinksListeners = function($popup, $lecturersLinks, lecturerObj) {
 	$lecturersLinks.on('click', function(event) {
-		const lecturersId = $(event.target).attr("class");
+		const lecturersId = $(event.target).attr("class").split(' ')[0];
   		setTextToPopup($popup, lecturersId, lecturerObj);
   		showBlock($popup);
+  		$("html").css("overflow", "hidden");
 	})
 
 };
@@ -11141,6 +11175,7 @@ const setTextToPopup = function($popup, lecturersId, lecturerObj) {
 	lecturerObj.$popupLecturer.html(lectorName);
 	lecturerObj.$popupDescription.html(lectorDescr);
 	lecturerObj.$popupImg.attr("src", "img/" + lectorImgSrc);
+	console.log(lector.description)
 };
 
 /**
@@ -11151,22 +11186,23 @@ const setTextToPopup = function($popup, lecturersId, lecturerObj) {
  */
 const setListenersToSchoolNames = function($schoolBoxes) {
 	$schoolBoxes.on('click', function() {
-		const $checkedBoxes = $("input.select__box:checked");
-		const $uncheckedBoxes = $("input.select__box:not(:checked)");
+		const $checkedBoxes = $(".school-select__input:checked");
+		const $uncheckedBoxes = $(".school-select__input:not(:checked)");
+
 
 		for (let i = 0; i < $uncheckedBoxes.length; i++){
-			const unvisibleSchoolName = $($uncheckedBoxes[i]).attr("class").split(" ")[1];
-			const unvisibleSchoolBlocks = $("." + unvisibleSchoolName).parent("li");
-			for (let i = 0; i < unvisibleSchoolBlocks.length; i++){
-				hideBlock($(unvisibleSchoolBlocks[i]));
+			const unvisibleSchoolName = $($uncheckedBoxes[i]).attr("class").split(" ")[2];
+			const $unvisibleSchoolBlocks = $("." + unvisibleSchoolName).parent("li");
+			for (let i = 0; i < $unvisibleSchoolBlocks.length; i++){
+				hideBlock($($unvisibleSchoolBlocks[i]));
 			}
 		}
 
 		for (let i = 0; i < $checkedBoxes.length; i++){
-			const visibleSchoolName = $($checkedBoxes[i]).attr("class").split(" ")[1];
-			const visibleSchoolBlocks = $("." + visibleSchoolName).parent("li");
-			for (let i = 0; i < visibleSchoolBlocks.length; i++){
-				showBlock($(visibleSchoolBlocks[i]));
+			const visibleSchoolName = $($checkedBoxes[i]).attr("class").split(" ")[2];
+			const $visibleSchoolBlocks = $("." + visibleSchoolName).parent("li");
+			for (let i = 0; i < $visibleSchoolBlocks.length; i++){
+				showBlock($($visibleSchoolBlocks[i]));
 			}
 		}
 	})
@@ -11174,7 +11210,7 @@ const setListenersToSchoolNames = function($schoolBoxes) {
 			
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11295,7 +11331,7 @@ function fromByteArray (uint8) {
 
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11309,9 +11345,9 @@ function fromByteArray (uint8) {
 
 
 
-var base64 = __webpack_require__(9)
-var ieee754 = __webpack_require__(15)
-var isArray = __webpack_require__(16)
+var base64 = __webpack_require__(10)
+var ieee754 = __webpack_require__(17)
+var isArray = __webpack_require__(18)
 
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
@@ -13089,21 +13125,7 @@ function isnan (val) {
   return val !== val // eslint-disable-line no-self-compare
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "/* Small Devices, Tablets */\r\n@media only screen and (max-width : 798px) {\r\n\t.schedule__item,\r\n\t.school__select {\r\n\t\tposition: relative;\r\n\t\tmargin: 0;\r\n\t\tpadding: 0;\r\n\t\tpadding-left: 10px;\r\n\t}\r\n\t.schedule__month,\r\n\t.schedule__date {\r\n\t\tfont-size: 15px;\r\n\t}\r\n\t.school__name,\r\n\t.selects__item {\r\n\t\tdisplay: block;\r\n\t\tpadding-left: 10%;\r\n\t}\r\n\t.schedule__item {\r\n\t\tpadding-top: 20px;\r\n\t}\r\n\t.header__main,\r\n\t.popup__lecturer {\r\n\t\tfont-size: 20px;\r\n\t}\r\n\t.schedule__place {\r\n\t\tdisplay: block;\r\n\t\tmargin-bottom: 5px;\r\n\t}\r\n\t.schedule__date {\r\n\t\ttop: 12px;\r\n\t\tleft: 17px;\r\n\t}\r\n\t.schedule__month{\r\n\t\ttop: 2px;\r\n\t\tleft: 35px;\r\n\t}\r\n\t.popup__close {\r\n    padding: 0px 10px;\r\n\t}\r\n\r\n}", ""]);
-
-// exports
-
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(21)))
 
 /***/ }),
 /* 12 */
@@ -13114,7 +13136,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".select__box:hover{\n  border-color: #fff;\n}\n\n.schedule__lecturer:hover, \n.schedule__materials:hover,\n.selects__item:hover {\n\t-webkit-box-shadow: 0 5px 4px rgba(0,0,0,0.25), 0 4px 6px rgba(0,0,0,0.22);\n\t-moz-box-shadow: 0 5px 4px rgba(0,0,0,0.25), 0 4px 6px rgba(0,0,0,0.22);\n\tbox-shadow: 0 5px 4px rgba(0,0,0,0.25), 0 4px 6px rgba(0,0,0,0.22);\n}\n\n.schedule__materials__notavail:hover {\n\tbox-shadow: none;\n}", ""]);
+exports.push([module.i, ".header {\n\tbackground-color: red;\n\ttext-align: center;\n\tpadding: 20px 0px;\n}\n\n.header__text {\n\tfont-family: 'Fjalla One', sans-serif;\n\tfont-size: 2.6rem;\n}", ""]);
 
 // exports
 
@@ -13128,7 +13150,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */\n\n/**\n * 1. Change the default font family in all browsers (opinionated).\n * 2. Correct the line height in all browsers.\n * 3. Prevent adjustments of font size after orientation changes in\n *    IE on Windows Phone and in iOS.\n */\n\n/* Document\n   ========================================================================== */\n\nhtml {\n  font-family: sans-serif; /* 1 */\n  line-height: 1.15; /* 2 */\n  -ms-text-size-adjust: 100%; /* 3 */\n  -webkit-text-size-adjust: 100%; /* 3 */\n}\n\n/* Sections\n   ========================================================================== */\n\n/**\n * Remove the margin in all browsers (opinionated).\n */\n\nbody {\n  margin: 0;\n}\n\n/**\n * Add the correct display in IE 9-.\n */\n\narticle,\naside,\nfooter,\nheader,\nnav,\nsection {\n  display: block;\n}\n\n/**\n * Correct the font size and margin on `h1` elements within `section` and\n * `article` contexts in Chrome, Firefox, and Safari.\n */\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\n/* Grouping content\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n * 1. Add the correct display in IE.\n */\n\nfigcaption,\nfigure,\nmain { /* 1 */\n  display: block;\n}\n\n/**\n * Add the correct margin in IE 8.\n */\n\nfigure {\n  margin: 1em 40px;\n}\n\n/**\n * 1. Add the correct box sizing in Firefox.\n * 2. Show the overflow in Edge and IE.\n */\n\nhr {\n  box-sizing: content-box; /* 1 */\n  height: 0; /* 1 */\n  overflow: visible; /* 2 */\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\npre {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/* Text-level semantics\n   ========================================================================== */\n\n/**\n * 1. Remove the gray background on active links in IE 10.\n * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.\n */\n\na {\n  background-color: transparent; /* 1 */\n  -webkit-text-decoration-skip: objects; /* 2 */\n}\n\n/**\n * Remove the outline on focused links when they are also active or hovered\n * in all browsers (opinionated).\n */\n\na:active,\na:hover {\n  outline-width: 0;\n}\n\n/**\n * 1. Remove the bottom border in Firefox 39-.\n * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.\n */\n\nabbr[title] {\n  border-bottom: none; /* 1 */\n  text-decoration: underline; /* 2 */\n  text-decoration: underline dotted; /* 2 */\n}\n\n/**\n * Prevent the duplicate application of `bolder` by the next rule in Safari 6.\n */\n\nb,\nstrong {\n  font-weight: inherit;\n}\n\n/**\n * Add the correct font weight in Chrome, Edge, and Safari.\n */\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\ncode,\nkbd,\nsamp {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/**\n * Add the correct font style in Android 4.3-.\n */\n\ndfn {\n  font-style: italic;\n}\n\n/**\n * Add the correct background and color in IE 9-.\n */\n\nmark {\n  background-color: #ff0;\n  color: #000;\n}\n\n/**\n * Add the correct font size in all browsers.\n */\n\nsmall {\n  font-size: 80%;\n}\n\n/**\n * Prevent `sub` and `sup` elements from affecting the line height in\n * all browsers.\n */\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/* Embedded content\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n */\n\naudio,\nvideo {\n  display: inline-block;\n}\n\n/**\n * Add the correct display in iOS 4-7.\n */\n\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n\n/**\n * Remove the border on images inside links in IE 10-.\n */\n\nimg {\n  border-style: none;\n}\n\n/**\n * Hide the overflow in IE.\n */\n\nsvg:not(:root) {\n  overflow: hidden;\n}\n\n/* Forms\n   ========================================================================== */\n\n/**\n * 1. Change the font styles in all browsers (opinionated).\n * 2. Remove the margin in Firefox and Safari.\n */\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: sans-serif; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: 1.15; /* 1 */\n  margin: 0; /* 2 */\n}\n\n/**\n * Show the overflow in IE.\n * 1. Show the overflow in Edge.\n */\n\nbutton,\ninput { /* 1 */\n  overflow: visible;\n}\n\n/**\n * Remove the inheritance of text transform in Edge, Firefox, and IE.\n * 1. Remove the inheritance of text transform in Firefox.\n */\n\nbutton,\nselect { /* 1 */\n  text-transform: none;\n}\n\n/**\n * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`\n *    controls in Android 4.\n * 2. Correct the inability to style clickable types in iOS and Safari.\n */\n\nbutton,\nhtml [type=\"button\"], /* 1 */\n[type=\"reset\"],\n[type=\"submit\"] {\n  -webkit-appearance: button; /* 2 */\n}\n\n/**\n * Remove the inner border and padding in Firefox.\n */\n\nbutton::-moz-focus-inner,\n[type=\"button\"]::-moz-focus-inner,\n[type=\"reset\"]::-moz-focus-inner,\n[type=\"submit\"]::-moz-focus-inner {\n  border-style: none;\n  padding: 0;\n}\n\n/**\n * Restore the focus styles unset by the previous rule.\n */\n\nbutton:-moz-focusring,\n[type=\"button\"]:-moz-focusring,\n[type=\"reset\"]:-moz-focusring,\n[type=\"submit\"]:-moz-focusring {\n  outline: 1px dotted ButtonText;\n}\n\n/**\n * Change the border, margin, and padding in all browsers (opinionated).\n */\n\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em;\n}\n\n/**\n * 1. Correct the text wrapping in Edge and IE.\n * 2. Correct the color inheritance from `fieldset` elements in IE.\n * 3. Remove the padding so developers are not caught out when they zero out\n *    `fieldset` elements in all browsers.\n */\n\nlegend {\n  box-sizing: border-box; /* 1 */\n  color: inherit; /* 2 */\n  display: table; /* 1 */\n  max-width: 100%; /* 1 */\n  padding: 0; /* 3 */\n  white-space: normal; /* 1 */\n}\n\n/**\n * 1. Add the correct display in IE 9-.\n * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.\n */\n\nprogress {\n  display: inline-block; /* 1 */\n  vertical-align: baseline; /* 2 */\n}\n\n/**\n * Remove the default vertical scrollbar in IE.\n */\n\ntextarea {\n  overflow: auto;\n}\n\n/**\n * 1. Add the correct box sizing in IE 10-.\n * 2. Remove the padding in IE 10-.\n */\n\n[type=\"checkbox\"],\n[type=\"radio\"] {\n  box-sizing: border-box; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Correct the cursor style of increment and decrement buttons in Chrome.\n */\n\n[type=\"number\"]::-webkit-inner-spin-button,\n[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/**\n * 1. Correct the odd appearance in Chrome and Safari.\n * 2. Correct the outline style in Safari.\n */\n\n[type=\"search\"] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/**\n * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.\n */\n\n[type=\"search\"]::-webkit-search-cancel-button,\n[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/**\n * 1. Correct the inability to style clickable types in iOS and Safari.\n * 2. Change font properties to `inherit` in Safari.\n */\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/* Interactive\n   ========================================================================== */\n\n/*\n * Add the correct display in IE 9-.\n * 1. Add the correct display in Edge, IE, and Firefox.\n */\n\ndetails, /* 1 */\nmenu {\n  display: block;\n}\n\n/*\n * Add the correct display in all browsers.\n */\n\nsummary {\n  display: list-item;\n}\n\n/* Scripting\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n */\n\ncanvas {\n  display: inline-block;\n}\n\n/**\n * Add the correct display in IE.\n */\n\ntemplate {\n  display: none;\n}\n\n/* Hidden\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 10-.\n */\n\n[hidden] {\n  display: none;\n}", ""]);
+exports.push([module.i, ".schedule-popup {\n\toverflow: auto;\n\tz-index: 10;\n    background-color: rgba(0,0,0,0.7);\n    position:fixed;\n    top:0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n}\n\n.schedule-popup__wrapper {\n\tz-index: 20;\n\tmargin: 20px auto 0px auto;\n    max-width: 540px;\n    min-height: 250px;\n    padding: 0px;\n    background-color: #fff;\n}\n\n.popup_close_yes {\n\tz-index: 10;\n\tbackground: transparent;\n    cursor: pointer;\n    float: right;\n    font-size: 21px;\n    font-weight: bold;\n    line-height: 2;\n    padding: 2px 15px;\n    text-shadow: 0 1px 0 #000;\n    opacity: 0.7;\n    border: 0px;\n}\n\n.popup_close-icon {\n\n}\n\n.schedule-popup__lecturer {\n\tbackground-color: red;\n\ttext-align: center;\n\tpadding: 20px 0px;\n\tfont-size: 1.6rem;\n}\n\n.schedule-popup__img-wrapper {\n    text-align: center;\n    padding: 10px 0;\n\n}\n\n.schedule-popup__img {\n\tmax-width:45%;\n}\n\n.schedule-popup__description {\n\tpadding: 0 20px;\n\tdisplay: inline-block;\n}", ""]);
 
 // exports
 
@@ -13142,13 +13164,41 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".hidden {\n    display: none;\n}\n \n.header {\n    box-sizing: border-box;\n    text-align: center;\n    padding: 10px 0px;\n    background-color: #F22613;\n}\n \n.header__main{\n    font-family: 'Fjalla One', sans-serif;\n    font-size: 40px;\n}\n \n.school__select {\n    box-sizing: border-box;\n    font-size: 0px;\n    padding: 5px 0px 5px 0px;\n    max-width: 900px;\n    padding-left: 0px;\n    margin: 10px auto 10px auto;\n}\n \n.selects__item {\n    font-family: 'Francois One', sans-serif;\n    font-size: 14px;\n    display: inline-block;\n    padding: 5px 6px;\n    margin-top: 5px;\n    margin-bottom: 5px;\n    margin-right: 10px;\n    background-color: #ffffff;\n    cursor: pointer;\n    border: 2px solid #000000;\n}\n \n.selects__item label{\n    cursor: pointer;\n}\ninput[type=\"checkbox\"] {\n    display:none;\n}\n \ninput[type=\"checkbox\"] + label span {\n    display: inline-block;\n    width: 15px;\n    height: 15px;\n    cursor: pointer;\n    margin: 0px 10px 0 0;\n    vertical-align: middle;\n    border: 2px solid #000000;\n}\ninput[type=\"checkbox\"]:checked + label span {\n    background: url(" + __webpack_require__(18) + ") top no-repeat;\n}\n \n.select__box {\n    vertical-align: bottom;\n}\n \n.school__name {\n    font-size: 14px;\n    margin-top: 5px;\n    margin-bottom: 5px;\n    padding-left: 10px;\n    padding-right: 10px;\n    min-height: 25px;\n    line-height: 25px;\n    display: inline-block;\n    margin-right: 10px;\n    border: 2px solid #000000;\n    background-color: #D2D7D3;\n}\n \n.schedule {\n    list-style: none;\n    padding: 0px;\n    margin: 0px;\n}\n \n.schedule__item {\n\tfont-family: 'Fjalla One', sans-serif;\n    position: relative;\n    box-sizing: border-box;\n    padding: 5px;\n    padding-left: 80px;\n    max-width: 900px;\n    margin: 0px auto 0px auto;\n    font-size: 0px;\n    border-bottom: 2px solid black;\n}\n.schedule__item:first-of-type {\n    border-top: 2px solid black;\n}\n \n.schedule__item a {\n    cursor: pointer;\n    color: #000000;\n    text-decoration:none;\n    padding: 10px 10px 10px 10px;\n}\n \n.schedule__item__passed {\n    background-color: #D2D7D3;\n}\n.schedule__date {\n    position: absolute;\n    top: 50%;\n    left: 30px;\n    display: inline;\n    font-size: 30px;\n    transform: translate(-15%, -50%);\n}\n \n.schedule__month {\n    font-size: 15px;\n    position: absolute;\n    top: 65%;\n    left: 1%;\n    display: inline;\n}\n \n.schedule__name {\n    padding: 5px;\n    font-size: 20px;\n}\n \n.schedule__lecturer {\n    font-size: 15px;\n    text-decoration: none;\n    display: inline-block; \n    cursor: pointer;\n    background-color: #ffffff;\n    border: 2px solid #000000;\n    margin-right: 10px;\n    margin-top: 5px;\n    margin-bottom: 5px;\n    padding: 5px 0px 5px 0px;\n \n}\n \n.schedule__materials {\n    font-size: 15px;\n    display: inline-block; \n    padding: 5px 0px 5px 0px;\n    background-color: #ffffff;\n    border: 2px solid #000000;\n    margin-right: 10px;\n    margin-top: 5px;\n    margin-bottom: 5px;\n}\n \n.schedule__materials__notavail{\n    opacity: 0.5;\n}\n \n.schedule__place {\n    font-size: 15px;\n    display: inline-block; \n    padding: 5px 10px 5px 10px;\n}\n \n.schedule__popup {\n\tfont-family: 'Fjalla One', sans-serif;\n    z-index: 10;\n    width:100%;\n    min-height:100%;\n    background-color: rgba(0,0,0,0.7);\n    overflow:hidden;\n    position:fixed;\n    top:0px;\n}\n \n.popup__content {\n    margin: 20px auto 0px auto;\n    max-width: 440px;\n    min-height: 250px;\n    padding: 0px;\n    background-color: #fff;\n}\n \n.popup__lecturer {\n\tfont-family: 'Francois One', sans-serif;\n    font-size: 35px;\n    box-sizing: border-box;\n    text-align: center;\n    padding: 10px 0px;\n    margin-bottom: 10px;\n    background-color: #F22613;\n}\n \n.popup__close {\n    background: transparent;\n    cursor: pointer;\n    float: right;\n    font-size: 21px;\n    font-weight: bold;\n    line-height: 2;\n    padding: 2px 15px;\n    text-shadow: 0 1px 0 #000;\n    opacity: 0.7;\n    border: 0px;\n}\n \n.popup__close__icon{\n    color: #000;\n}\n \n.popup__img__wraper {\n    text-align: center;\n}\n.popup__img {\n    max-width:45%;\n}\n \n.popup__description {\n    padding: 10px 20px;\n}", ""]);
+exports.push([module.i, ".schedule {\n\tlist-style: none;\n\tmargin: 0;\n\tpadding: 0;\n}\n\n.schedule-item {\n\tfont-family: 'Fjalla One', sans-serif;\n\tbox-sizing: border-box;\n\tmax-width: 960px;\n\tmargin: 0 auto;\n\tpadding-left: 80px;\n\tpadding-top: 10px;\n\tpadding-bottom: 10px;\n\tposition: relative;\n\tborder-top: 2px solid #000000;\n}\n\n.schedule-item_hidden {\n\tdisplay: none;\n}\n\n.schedule-item__link {\n\tdisplay: inline-block;\n    cursor: pointer;\n    color: #000000;\n    background-color: #ffffff;\n    text-decoration: none;\n    padding: 5px 10px;\n\tfont-size: 1rem;\n\tborder: 2px solid #000000;\n}\n\n.schedule-item__link:hover {\n\tbox-shadow: 0 5px 4px rgba(0,0,0,0.25), 0 4px 6px rgba(0,0,0,0.22);\n}\n\n.schedule-item__link_notavail {\n\topacity: 0.5;\n}\n\n.schedule-item__link_notavail:hover {\n\tcursor: no-drop;\n\tbox-shadow: none;\n}\n\n.schedule-item_passed {\n\tbackground-color: #D2D7D3;\n}\n\n.school-name {\n\tdisplay: inline-block;\n\tpadding: 5px 10px;\n\tfont-size: 1rem;\n\tborder: 2px solid #000000;\n}\n\n.schedule-item__date {\n\tposition: absolute;\n\ttop: 40%;\n    left: 30px;\n    font-size: 30px;\n    transform: translate(-15%, -50%);\n}\n\n.schedule-item__month {\n\tposition: absolute;\n\ttop: 55%;\n    left: 1%;\n\tfont-size: 15px;\n    display: inline;\n}\n\n.schedule-item__name {\n\tpadding: 10px 0;\n    font-size: 20px;\n}\n\n.schedule-item__lecturer {\n\tdisplay: inline-block;\n}\n\n.schedule-item__materials {\n\tdisplay: inline-block;\n}\n\n.schedule-item__place {\n\tdisplay: inline-block;\n\tpadding: 7px;\n}\n\n\n@media only screen and (max-width : 860px) {\n\t.schedule-item {\n\t\tpadding: 10px;\n\t\tpadding-top: 30px;\n\t}\n\n\t.school-name {\n\t\tdisplay: block;\n    \tmargin: 7px 0px;\n\t}\t\n\n\t.schedule-item__date {\n\t    top: 14px;\n\t    left: 15px;\n\t    font-size: 19px;\n\t}\n\n\t.schedule-item__month {\n\t    top: 5px;\n\t    left: 40px;\n\t    font-size: 18px;\n\t    display: inline;\n\t}\n}", ""]);
 
 // exports
 
 
 /***/ }),
 /* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".school-select {\n\tbox-sizing: border-box;\n\tfont-size: 0;\n\tmax-width: 960px;\n\tmargin: 0 auto;\n\tpadding: 10px 0;\n}\n\n.school-select-wrapper {\n\tdisplay: flex;\n    justify-content: center;\n\tmargin:auto;\n}\n\n.school-select__input {\n\tbackground-color: yellow;\n}\n\n.school-select__input_hidden {\n\tdisplay: none;\n}\n\n.school-select__name {\n\tcursor: pointer;\n\tmargin: 5px;\n\tpadding: 0 5px;\n\tfont-size: 1rem;\n\tborder: 2px solid #000000;\n}\n\n.school-select__box {\n\tvertical-align: middle;\n\twidth:15px;\n\theight: 15px;\n\tmargin: 5px 5px;\n\tmargin-right: 10px;\n\tborder: 2px solid #000000;\n\tdisplay: inline-block;\n}\n\n.school-select__input:checked + .school-select__name .school-select__box{\n    background: url(" + __webpack_require__(20) + ") top no-repeat;\n}\n\n@media only screen and (max-width : 798px) {\n\t.school-select-wrapper {\n\t\tdisplay: block;\n\t}\n\n\t.school-select__name {\n\t\tdisplay: block;\n\t}\n}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */\n\n/**\n * 1. Change the default font family in all browsers (opinionated).\n * 2. Correct the line height in all browsers.\n * 3. Prevent adjustments of font size after orientation changes in\n *    IE on Windows Phone and in iOS.\n */\n\n/* Document\n   ========================================================================== */\n\nhtml {\n  font-family: sans-serif; /* 1 */\n  line-height: 1.15; /* 2 */\n  -ms-text-size-adjust: 100%; /* 3 */\n  -webkit-text-size-adjust: 100%; /* 3 */\n}\n\n/* Sections\n   ========================================================================== */\n\n/**\n * Remove the margin in all browsers (opinionated).\n */\n\nbody {\n  margin: 0;\n}\n\n/**\n * Add the correct display in IE 9-.\n */\n\narticle,\naside,\nfooter,\nheader,\nnav,\nsection {\n  display: block;\n}\n\n/**\n * Correct the font size and margin on `h1` elements within `section` and\n * `article` contexts in Chrome, Firefox, and Safari.\n */\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\n/* Grouping content\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n * 1. Add the correct display in IE.\n */\n\nfigcaption,\nfigure,\nmain { /* 1 */\n  display: block;\n}\n\n/**\n * Add the correct margin in IE 8.\n */\n\nfigure {\n  margin: 1em 40px;\n}\n\n/**\n * 1. Add the correct box sizing in Firefox.\n * 2. Show the overflow in Edge and IE.\n */\n\nhr {\n  box-sizing: content-box; /* 1 */\n  height: 0; /* 1 */\n  overflow: visible; /* 2 */\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\npre {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/* Text-level semantics\n   ========================================================================== */\n\n/**\n * 1. Remove the gray background on active links in IE 10.\n * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.\n */\n\na {\n  background-color: transparent; /* 1 */\n  -webkit-text-decoration-skip: objects; /* 2 */\n}\n\n/**\n * Remove the outline on focused links when they are also active or hovered\n * in all browsers (opinionated).\n */\n\na:active,\na:hover {\n  outline-width: 0;\n}\n\n/**\n * 1. Remove the bottom border in Firefox 39-.\n * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.\n */\n\nabbr[title] {\n  border-bottom: none; /* 1 */\n  text-decoration: underline; /* 2 */\n  text-decoration: underline dotted; /* 2 */\n}\n\n/**\n * Prevent the duplicate application of `bolder` by the next rule in Safari 6.\n */\n\nb,\nstrong {\n  font-weight: inherit;\n}\n\n/**\n * Add the correct font weight in Chrome, Edge, and Safari.\n */\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\ncode,\nkbd,\nsamp {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/**\n * Add the correct font style in Android 4.3-.\n */\n\ndfn {\n  font-style: italic;\n}\n\n/**\n * Add the correct background and color in IE 9-.\n */\n\nmark {\n  background-color: #ff0;\n  color: #000;\n}\n\n/**\n * Add the correct font size in all browsers.\n */\n\nsmall {\n  font-size: 80%;\n}\n\n/**\n * Prevent `sub` and `sup` elements from affecting the line height in\n * all browsers.\n */\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/* Embedded content\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n */\n\naudio,\nvideo {\n  display: inline-block;\n}\n\n/**\n * Add the correct display in iOS 4-7.\n */\n\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n\n/**\n * Remove the border on images inside links in IE 10-.\n */\n\nimg {\n  border-style: none;\n}\n\n/**\n * Hide the overflow in IE.\n */\n\nsvg:not(:root) {\n  overflow: hidden;\n}\n\n/* Forms\n   ========================================================================== */\n\n/**\n * 1. Change the font styles in all browsers (opinionated).\n * 2. Remove the margin in Firefox and Safari.\n */\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: sans-serif; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: 1.15; /* 1 */\n  margin: 0; /* 2 */\n}\n\n/**\n * Show the overflow in IE.\n * 1. Show the overflow in Edge.\n */\n\nbutton,\ninput { /* 1 */\n  overflow: visible;\n}\n\n/**\n * Remove the inheritance of text transform in Edge, Firefox, and IE.\n * 1. Remove the inheritance of text transform in Firefox.\n */\n\nbutton,\nselect { /* 1 */\n  text-transform: none;\n}\n\n/**\n * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`\n *    controls in Android 4.\n * 2. Correct the inability to style clickable types in iOS and Safari.\n */\n\nbutton,\nhtml [type=\"button\"], /* 1 */\n[type=\"reset\"],\n[type=\"submit\"] {\n  -webkit-appearance: button; /* 2 */\n}\n\n/**\n * Remove the inner border and padding in Firefox.\n */\n\nbutton::-moz-focus-inner,\n[type=\"button\"]::-moz-focus-inner,\n[type=\"reset\"]::-moz-focus-inner,\n[type=\"submit\"]::-moz-focus-inner {\n  border-style: none;\n  padding: 0;\n}\n\n/**\n * Restore the focus styles unset by the previous rule.\n */\n\nbutton:-moz-focusring,\n[type=\"button\"]:-moz-focusring,\n[type=\"reset\"]:-moz-focusring,\n[type=\"submit\"]:-moz-focusring {\n  outline: 1px dotted ButtonText;\n}\n\n/**\n * Change the border, margin, and padding in all browsers (opinionated).\n */\n\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em;\n}\n\n/**\n * 1. Correct the text wrapping in Edge and IE.\n * 2. Correct the color inheritance from `fieldset` elements in IE.\n * 3. Remove the padding so developers are not caught out when they zero out\n *    `fieldset` elements in all browsers.\n */\n\nlegend {\n  box-sizing: border-box; /* 1 */\n  color: inherit; /* 2 */\n  display: table; /* 1 */\n  max-width: 100%; /* 1 */\n  padding: 0; /* 3 */\n  white-space: normal; /* 1 */\n}\n\n/**\n * 1. Add the correct display in IE 9-.\n * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.\n */\n\nprogress {\n  display: inline-block; /* 1 */\n  vertical-align: baseline; /* 2 */\n}\n\n/**\n * Remove the default vertical scrollbar in IE.\n */\n\ntextarea {\n  overflow: auto;\n}\n\n/**\n * 1. Add the correct box sizing in IE 10-.\n * 2. Remove the padding in IE 10-.\n */\n\n[type=\"checkbox\"],\n[type=\"radio\"] {\n  box-sizing: border-box; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Correct the cursor style of increment and decrement buttons in Chrome.\n */\n\n[type=\"number\"]::-webkit-inner-spin-button,\n[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/**\n * 1. Correct the odd appearance in Chrome and Safari.\n * 2. Correct the outline style in Safari.\n */\n\n[type=\"search\"] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/**\n * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.\n */\n\n[type=\"search\"]::-webkit-search-cancel-button,\n[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/**\n * 1. Correct the inability to style clickable types in iOS and Safari.\n * 2. Change font properties to `inherit` in Safari.\n */\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/* Interactive\n   ========================================================================== */\n\n/*\n * Add the correct display in IE 9-.\n * 1. Add the correct display in Edge, IE, and Firefox.\n */\n\ndetails, /* 1 */\nmenu {\n  display: block;\n}\n\n/*\n * Add the correct display in all browsers.\n */\n\nsummary {\n  display: list-item;\n}\n\n/* Scripting\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n */\n\ncanvas {\n  display: inline-block;\n}\n\n/**\n * Add the correct display in IE.\n */\n\ntemplate {\n  display: none;\n}\n\n/* Hidden\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 10-.\n */\n\n[hidden] {\n  display: none;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 17 */
 /***/ (function(module, exports) {
 
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
@@ -13238,7 +13288,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 
 /***/ }),
-/* 16 */
+/* 18 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -13249,7 +13299,7 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 17 */
+/* 19 */
 /***/ (function(module, exports) {
 
 
@@ -13344,13 +13394,13 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 18 */
+/* 20 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAIhAAACIQBDVcC+gAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADcSURBVDiNpZM9CgIxEIW/8QCWnsDOQqwsRCsb2VIQxFKs3NrSC3gxD+AhBAthwV/UZzMLYdlV1w2kCG++5OUlY5KoMmqV6H83MLPYzC5mtkRSqQnMgRcgYFsWngFPhw9Aqww8Bh4OH4GOJFKx8QWOgLvDCdANNDYurArgIXD1mhPQz+jsXBSwyIgDh+SbDHMOoAnsvegJTFzoul25/SjXoRe3PRgBN2AdrB/AuDCfwEoPOAfXSR3NPgacuc8oSPsFzL8+b04oUz85/uV/WF43mlldUlLcDUFt1XZ+A3+KesnolUbIAAAAAElFTkSuQmCC"
 
 /***/ }),
-/* 19 */
+/* 21 */
 /***/ (function(module, exports) {
 
 var g;

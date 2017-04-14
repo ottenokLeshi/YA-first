@@ -1,0 +1,59 @@
+.schedule-popup {
+	overflow: auto;
+	z-index: 10;
+    background-color: rgba(0,0,0,0.7);
+    position:fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.schedule-popup__wrapper {
+	z-index: 20;
+	margin: 20px auto 0px auto;
+    max-width: 540px;
+    min-height: 250px;
+    padding: 0px;
+    background-color: #fff;
+}
+
+.popup_close_yes {
+	z-index: 10;
+	background: transparent;
+    cursor: pointer;
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 2;
+    padding: 2px 15px;
+    text-shadow: 0 1px 0 #000;
+    opacity: 0.7;
+    border: 0px;
+}
+
+.popup_close-icon {
+
+}
+
+.schedule-popup__lecturer {
+	background-color: red;
+	text-align: center;
+	padding: 20px 0px;
+	font-size: 1.6rem;
+}
+
+.schedule-popup__img-wrapper {
+    text-align: center;
+    padding: 10px 0;
+
+}
+
+.schedule-popup__img {
+	max-width:45%;
+}
+
+.schedule-popup__description {
+	padding: 0 20px;
+	display: inline-block;
+}

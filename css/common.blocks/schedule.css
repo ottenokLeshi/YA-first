@@ -1,0 +1,116 @@
+.schedule {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.schedule-item {
+	font-family: 'Fjalla One', sans-serif;
+	box-sizing: border-box;
+	max-width: 960px;
+	margin: 0 auto;
+	padding-left: 80px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: relative;
+	border-top: 2px solid #000000;
+}
+
+.schedule-item_hidden {
+	display: none;
+}
+
+.schedule-item__link {
+	display: inline-block;
+    cursor: pointer;
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+	font-size: 1rem;
+	border: 2px solid #000000;
+}
+
+.schedule-item__link:hover {
+	box-shadow: 0 5px 4px rgba(0,0,0,0.25), 0 4px 6px rgba(0,0,0,0.22);
+}
+
+.schedule-item__link_notavail {
+	opacity: 0.5;
+}
+
+.schedule-item__link_notavail:hover {
+	cursor: no-drop;
+	box-shadow: none;
+}
+
+.schedule-item_passed {
+	background-color: #D2D7D3;
+}
+
+.school-name {
+	display: inline-block;
+	padding: 5px 10px;
+	font-size: 1rem;
+	border: 2px solid #000000;
+}
+
+.schedule-item__date {
+	position: absolute;
+	top: 40%;
+    left: 30px;
+    font-size: 30px;
+    transform: translate(-15%, -50%);
+}
+
+.schedule-item__month {
+	position: absolute;
+	top: 55%;
+    left: 1%;
+	font-size: 15px;
+    display: inline;
+}
+
+.schedule-item__name {
+	padding: 10px 0;
+    font-size: 20px;
+}
+
+.schedule-item__lecturer {
+	display: inline-block;
+}
+
+.schedule-item__materials {
+	display: inline-block;
+}
+
+.schedule-item__place {
+	display: inline-block;
+	padding: 7px;
+}
+
+
+@media only screen and (max-width : 860px) {
+	.schedule-item {
+		padding: 10px;
+		padding-top: 30px;
+	}
+
+	.school-name {
+		display: block;
+    	margin: 7px 0px;
+	}	
+
+	.schedule-item__date {
+	    top: 14px;
+	    left: 15px;
+	    font-size: 19px;
+	}
+
+	.schedule-item__month {
+	    top: 5px;
+	    left: 40px;
+	    font-size: 18px;
+	    display: inline;
+	}
+}

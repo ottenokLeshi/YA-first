@@ -1,19 +1,21 @@
 const lecturers = require('./lecturers.js');
 const $ = require('jquery');
 require('../css/normalize.css');
-require('../css/style.css');
-require('../css/media.css');
-require('../css/modificators.css');
+require('../css/common.blocks/header.css');
+require('../css/common.blocks/school-select.css');
+require('../css/common.blocks/schedule.css');
+require('../css/common.blocks/schedule-popup.css');
 
 $(document).ready(function(){
-	const $popup = $(".schedule__popup");
-	const $lecturersLinks = $(".schedule__lecturer").find("a");
-	const $allLinks = $(".schedule__item:not(.schedule__item__passed)").find("a");
-	const $popupCloseButton = $(".popup__close");
-	const $popupLecturer = $(".popup__lecturer");
-	const $popupDescription = $(".popup__description");
-	const $popupImg = $(".popup__img");
-	const $schoolBoxes = $(".select__box");
+	const $lecturersLinks = $(".schedule-item__lecturer").find("a");
+	const $schoolBoxes = $(".school-select__input");
+	const $allLinks = $(".schedule-item").find("a");
+
+	const $popup = $(".schedule-popup");
+	const $popupCloseButton = $(".popup_close_yes");
+	const $popupLecturer = $(".schedule-popup__lecturer");
+	const $popupDescription = $(".schedule-popup__description");
+	const $popupImg = $(".schedule-popup__img");
 
 	setDefaulToLinks($allLinks);
 	setPopupListeners($popup, $popupCloseButton);
@@ -45,7 +47,7 @@ const setDefaulToLinks = function($allLinks) {
  *
  */
 const blockIsHidden = function($block){
-	return $($block).hasClass("hidden");
+	return $($block).hasClass("schedule-item_hidden");
 }
 
 /**
@@ -55,7 +57,7 @@ const blockIsHidden = function($block){
  *
  */
 const hideBlock = function($block){
-	$($block).addClass("hidden");
+	$($block).addClass("schedule-item_hidden");
 };
 
 /**
@@ -65,7 +67,7 @@ const hideBlock = function($block){
  *
  */
 const showBlock = function($block){
-	$($block).removeClass("hidden");
+	$($block).removeClass("schedule-item_hidden");
 }
 
 /**
@@ -76,9 +78,14 @@ const showBlock = function($block){
  *
  */
 const setPopupListeners = function($popup, $popupCloseButton){
-	$popupCloseButton.click(function(){
-		hideBlock($popup);
+	$popup.click(function(event){
+		$target = $(event.target)
+		if ($target.hasClass("popup_close_yes") || $target.hasClass("schedule-popup") || $target.hasClass("popup_close-icon")){
+			hideBlock($popup);
+			$("html").css("overflow", "auto");
+		}
 	});
+	$('')
 };
 
 /**
@@ -91,9 +98,10 @@ const setPopupListeners = function($popup, $popupCloseButton){
  */
 const setLinksListeners = function($popup, $lecturersLinks, lecturerObj) {
 	$lecturersLinks.on('click', function(event) {
-		const lecturersId = $(event.target).attr("class");
+		const lecturersId = $(event.target).attr("class").split(' ')[0];
   		setTextToPopup($popup, lecturersId, lecturerObj);
   		showBlock($popup);
+  		$("html").css("overflow", "hidden");
 	})
 
 };
@@ -116,6 +124,7 @@ const setTextToPopup = function($popup, lecturersId, lecturerObj) {
 	lecturerObj.$popupLecturer.html(lectorName);
 	lecturerObj.$popupDescription.html(lectorDescr);
 	lecturerObj.$popupImg.attr("src", "img/" + lectorImgSrc);
+	console.log(lector.description)
 };
 
 /**
@@ -126,22 +135,23 @@ const setTextToPopup = function($popup, lecturersId, lecturerObj) {
  */
 const setListenersToSchoolNames = function($schoolBoxes) {
 	$schoolBoxes.on('click', function() {
-		const $checkedBoxes = $("input.select__box:checked");
-		const $uncheckedBoxes = $("input.select__box:not(:checked)");
+		const $checkedBoxes = $(".school-select__input:checked");
+		const $uncheckedBoxes = $(".school-select__input:not(:checked)");
+
 
 		for (let i = 0; i < $uncheckedBoxes.length; i++){
-			const unvisibleSchoolName = $($uncheckedBoxes[i]).attr("class").split(" ")[1];
-			const unvisibleSchoolBlocks = $("." + unvisibleSchoolName).parent("li");
-			for (let i = 0; i < unvisibleSchoolBlocks.length; i++){
-				hideBlock($(unvisibleSchoolBlocks[i]));
+			const unvisibleSchoolName = $($uncheckedBoxes[i]).attr("class").split(" ")[2];
+			const $unvisibleSchoolBlocks = $("." + unvisibleSchoolName).parent("li");
+			for (let i = 0; i < $unvisibleSchoolBlocks.length; i++){
+				hideBlock($($unvisibleSchoolBlocks[i]));
 			}
 		}
 
 		for (let i = 0; i < $checkedBoxes.length; i++){
-			const visibleSchoolName = $($checkedBoxes[i]).attr("class").split(" ")[1];
-			const visibleSchoolBlocks = $("." + visibleSchoolName).parent("li");
-			for (let i = 0; i < visibleSchoolBlocks.length; i++){
-				showBlock($(visibleSchoolBlocks[i]));
+			const visibleSchoolName = $($checkedBoxes[i]).attr("class").split(" ")[2];
+			const $visibleSchoolBlocks = $("." + visibleSchoolName).parent("li");
+			for (let i = 0; i < $visibleSchoolBlocks.length; i++){
+				showBlock($($visibleSchoolBlocks[i]));
 			}
 		}
 	})
