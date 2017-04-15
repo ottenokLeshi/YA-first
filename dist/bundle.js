@@ -11060,7 +11060,8 @@ __webpack_require__(5);
 $(document).ready(function(){
 	const $lecturersLinks = $(".schedule-item__lecturer").find("a");
 	const $schoolBoxes = $(".school-select__input");
-	const $allLinks = $(".schedule-item").find("a");
+	const $allLinks = $(".schedule-item__link_notavail");
+	console.log($allLinks)
 
 	const $popup = $(".schedule-popup");
 	const $popupCloseButton = $(".popup_close_yes");
@@ -13136,7 +13137,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".header {\n\tbackground-color: red;\n\ttext-align: center;\n\tpadding: 20px 0px;\n}\n\n.header__text {\n\tfont-family: 'Fjalla One', sans-serif;\n\tfont-size: 2.6rem;\n}", ""]);
+exports.push([module.i, ".header {\n\tbackground-color: red;\n\ttext-align: center;\n\tpadding: 15px 0px;\n}\n\n.header__text {\n\tfont-family: 'Fjalla One', sans-serif;\n\tfont-size: 2.6rem;\n}\n\n@media only screen and (max-width : 860px) {\n\t.header {\n\t\tpadding: 10px 0px;\n\t}\n\n\t.header__text {\n\t\tfont-size: 1.4rem;\n\t}\n}", ""]);
 
 // exports
 
@@ -13164,7 +13165,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".schedule {\n\tlist-style: none;\n\tmargin: 0;\n\tpadding: 0;\n}\n\n.schedule-item {\n\tfont-family: 'Fjalla One', sans-serif;\n\tbox-sizing: border-box;\n\tmax-width: 960px;\n\tmargin: 0 auto;\n\tpadding-left: 80px;\n\tpadding-top: 10px;\n\tpadding-bottom: 10px;\n\tposition: relative;\n\tborder-top: 2px solid #000000;\n}\n\n.schedule-item_hidden {\n\tdisplay: none;\n}\n\n.schedule-item__link {\n\tdisplay: inline-block;\n    cursor: pointer;\n    color: #000000;\n    background-color: #ffffff;\n    text-decoration: none;\n    padding: 5px 10px;\n\tfont-size: 1rem;\n\tborder: 2px solid #000000;\n}\n\n.schedule-item__link:hover {\n\tbox-shadow: 0 5px 4px rgba(0,0,0,0.25), 0 4px 6px rgba(0,0,0,0.22);\n}\n\n.schedule-item__link_notavail {\n\topacity: 0.5;\n}\n\n.schedule-item__link_notavail:hover {\n\tcursor: no-drop;\n\tbox-shadow: none;\n}\n\n.schedule-item_passed {\n\tbackground-color: #D2D7D3;\n}\n\n.school-name {\n\tdisplay: inline-block;\n\tpadding: 5px 10px;\n\tfont-size: 1rem;\n\tborder: 2px solid #000000;\n}\n\n.schedule-item__date {\n\tposition: absolute;\n\ttop: 40%;\n    left: 30px;\n    font-size: 30px;\n    transform: translate(-15%, -50%);\n}\n\n.schedule-item__month {\n\tposition: absolute;\n\ttop: 55%;\n    left: 1%;\n\tfont-size: 15px;\n    display: inline;\n}\n\n.schedule-item__name {\n\tpadding: 10px 0;\n    font-size: 20px;\n}\n\n.schedule-item__lecturer {\n\tdisplay: inline-block;\n}\n\n.schedule-item__materials {\n\tdisplay: inline-block;\n}\n\n.schedule-item__place {\n\tdisplay: inline-block;\n\tpadding: 7px;\n}\n\n\n@media only screen and (max-width : 860px) {\n\t.schedule-item {\n\t\tpadding: 10px;\n\t\tpadding-top: 30px;\n\t}\n\n\t.school-name {\n\t\tdisplay: block;\n    \tmargin: 7px 0px;\n\t}\t\n\n\t.schedule-item__date {\n\t    top: 14px;\n\t    left: 15px;\n\t    font-size: 19px;\n\t}\n\n\t.schedule-item__month {\n\t    top: 5px;\n\t    left: 40px;\n\t    font-size: 18px;\n\t    display: inline;\n\t}\n}", ""]);
+exports.push([module.i, ".schedule {\n\tlist-style: none;\n\tmargin: 0;\n\tpadding: 0;\n}\n\n.schedule-item {\n\tfont-family: 'Fjalla One', sans-serif;\n\tbox-sizing: border-box;\n\tmax-width: 960px;\n\tmargin: 0 auto;\n\tpadding-left: 80px;\n\tpadding-top: 10px;\n\tpadding-bottom: 10px;\n\tposition: relative;\n\tborder-top: 2px solid #000000;\n}\n\n.schedule-item_hidden {\n\tdisplay: none;\n}\n\n.schedule-item__link {\n\tdisplay: inline-block;\n    cursor: pointer;\n    color: #000000;\n    background-color: #ffffff;\n    text-decoration: none;\n    padding: 5px 10px;\n\tfont-size: 1rem;\n\tborder: 2px solid #000000;\n}\n\n.schedule-item__link:hover {\n\tbox-shadow: 0 5px 4px rgba(0,0,0,0.25), 0 4px 6px rgba(0,0,0,0.22);\n}\n\n.schedule-item__link_notavail {\n\topacity: 0.5;\n}\n\n.schedule-item__link_notavail:hover {\n\tcursor: no-drop;\n\tbox-shadow: none;\n}\n\n.schedule-item_passed {\n\tbackground-color: #D2D7D3;\n}\n\n.school-name {\n\tdisplay: inline-block;\n\tpadding: 5px 10px;\n\tfont-size: 1rem;\n\tborder: 2px solid #000000;\n}\n\n.schedule-item__date {\n\tposition: absolute;\n\ttop: 40%;\n    left: 30px;\n    font-size: 30px;\n    transform: translate(-15%, -50%);\n}\n\n.schedule-item__month {\n\tposition: absolute;\n\ttop: 55%;\n    left: 1%;\n\tfont-size: 15px;\n    display: inline;\n}\n\n.schedule-item__name {\n\tpadding: 10px 0;\n    font-size: 20px;\n}\n\n.schedule-item__lecturer {\n\tdisplay: inline-block;\n}\n\n.schedule-item__materials {\n\tdisplay: inline-block;\n}\n\n.schedule-item__place {\n\tdisplay: inline-block;\n\tpadding: 7px;\n}\n\n\n@media only screen and (max-width : 860px) {\n\t.schedule-item {\n\t\tpadding: 10px;\n\t\tpadding-top: 30px;\n\t}\n\n\t.school-name {\n\t\tdisplay: block;\n    \tmargin: 7px 0px;\n\t}\t\n\n\t.schedule-item__date {\n\t    top: 19px;\n\t    left: 15px;\n\t    font-size: 19px;\n\t}\n\n\t.schedule-item__month {\n\t    top: 8px;\n\t    left: 40px;\n\t    font-size: 18px;\n\t    display: inline;\n\t}\n\n\t.schedule-item__lecturer,\n\t.schedule-item__material,\n\t.schedule-item__place {\n\t\tdisplay: block;\n\t}\n\t.schedule-item__lecturer, \n\t.schedule-item__material {\n\t\tmargin-bottom: 7px;\n\t}\n}", ""]);
 
 // exports
 

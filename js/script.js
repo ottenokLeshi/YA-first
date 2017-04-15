@@ -9,7 +9,8 @@ require('../css/common.blocks/schedule-popup.css');
 $(document).ready(function(){
 	const $lecturersLinks = $(".schedule-item__lecturer").find("a");
 	const $schoolBoxes = $(".school-select__input");
-	const $allLinks = $(".schedule-item").find("a");
+	const $allLinks = $(".schedule-item__link_notavail");
+	console.log($allLinks)
 
 	const $popup = $(".schedule-popup");
 	const $popupCloseButton = $(".popup_close_yes");

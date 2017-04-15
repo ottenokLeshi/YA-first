@@ -102,15 +102,25 @@
 	}	
 
 	.schedule-item__date {
-	    top: 14px;
+	    top: 19px;
 	    left: 15px;
 	    font-size: 19px;
 	}
 
 	.schedule-item__month {
-	    top: 5px;
+	    top: 8px;
 	    left: 40px;
 	    font-size: 18px;
 	    display: inline;
+	}
+
+	.schedule-item__lecturer,
+	.schedule-item__material,
+	.schedule-item__place {
+		display: block;
+	}
+	.schedule-item__lecturer, 
+	.schedule-item__material {
+		margin-bottom: 7px;
 	}
 }
