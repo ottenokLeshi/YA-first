@@ -46,11 +46,10 @@
 .schedule-popup__img-wrapper {
     text-align: center;
     padding: 10px 0;
-
 }
 
 .schedule-popup__img {
-	max-width:45%;
+    max-width:45%;
 }
 
 .schedule-popup__description {

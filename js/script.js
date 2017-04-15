@@ -9,8 +9,7 @@ require('../css/common.blocks/schedule-popup.css');
 $(document).ready(function(){
 	const $lecturersLinks = $(".schedule-item__lecturer").find("a");
 	const $schoolBoxes = $(".school-select__input");
-	const $allLinks = $(".schedule-item__link_notavail");
-	console.log($allLinks)
+	const $allLinks = $(".schedule-item__link_notavail, .schedule-item__lecturer");
 
 	const $popup = $(".schedule-popup");
 	const $popupCloseButton = $(".popup_close_yes");
@@ -37,7 +36,6 @@ $(document).ready(function(){
 const setDefaulToLinks = function($allLinks) {
 	$allLinks.on('click', function(event) {
 		event.preventDefault();
-  		event.stopPropagation();
 	})
 };
 
@@ -125,7 +123,6 @@ const setTextToPopup = function($popup, lecturersId, lecturerObj) {
 	lecturerObj.$popupLecturer.html(lectorName);
 	lecturerObj.$popupDescription.html(lectorDescr);
 	lecturerObj.$popupImg.attr("src", "img/" + lectorImgSrc);
-	console.log(lector.description)
 };
 
 /**

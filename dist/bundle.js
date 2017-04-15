@@ -11060,8 +11060,7 @@ __webpack_require__(5);
 $(document).ready(function(){
 	const $lecturersLinks = $(".schedule-item__lecturer").find("a");
 	const $schoolBoxes = $(".school-select__input");
-	const $allLinks = $(".schedule-item__link_notavail");
-	console.log($allLinks)
+	const $allLinks = $(".schedule-item__link_notavail, .schedule-item__lecturer");
 
 	const $popup = $(".schedule-popup");
 	const $popupCloseButton = $(".popup_close_yes");
@@ -11088,7 +11087,6 @@ $(document).ready(function(){
 const setDefaulToLinks = function($allLinks) {
 	$allLinks.on('click', function(event) {
 		event.preventDefault();
-  		event.stopPropagation();
 	})
 };
 
@@ -11176,7 +11174,6 @@ const setTextToPopup = function($popup, lecturersId, lecturerObj) {
 	lecturerObj.$popupLecturer.html(lectorName);
 	lecturerObj.$popupDescription.html(lectorDescr);
 	lecturerObj.$popupImg.attr("src", "img/" + lectorImgSrc);
-	console.log(lector.description)
 };
 
 /**
@@ -13151,7 +13148,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".schedule-popup {\n\toverflow: auto;\n\tz-index: 10;\n    background-color: rgba(0,0,0,0.7);\n    position:fixed;\n    top:0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n}\n\n.schedule-popup__wrapper {\n\tz-index: 20;\n\tmargin: 20px auto 0px auto;\n    max-width: 540px;\n    min-height: 250px;\n    padding: 0px;\n    background-color: #fff;\n}\n\n.popup_close_yes {\n\tz-index: 10;\n\tbackground: transparent;\n    cursor: pointer;\n    float: right;\n    font-size: 21px;\n    font-weight: bold;\n    line-height: 2;\n    padding: 2px 15px;\n    text-shadow: 0 1px 0 #000;\n    opacity: 0.7;\n    border: 0px;\n}\n\n.popup_close-icon {\n\n}\n\n.schedule-popup__lecturer {\n\tbackground-color: red;\n\ttext-align: center;\n\tpadding: 20px 0px;\n\tfont-size: 1.6rem;\n}\n\n.schedule-popup__img-wrapper {\n    text-align: center;\n    padding: 10px 0;\n\n}\n\n.schedule-popup__img {\n\tmax-width:45%;\n}\n\n.schedule-popup__description {\n\tpadding: 0 20px;\n\tdisplay: inline-block;\n}", ""]);
+exports.push([module.i, ".schedule-popup {\n\toverflow: auto;\n\tz-index: 10;\n    background-color: rgba(0,0,0,0.7);\n    position:fixed;\n    top:0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n}\n\n.schedule-popup__wrapper {\n\tz-index: 20;\n\tmargin: 20px auto 0px auto;\n    max-width: 540px;\n    min-height: 250px;\n    padding: 0px;\n    background-color: #fff;\n}\n\n.popup_close_yes {\n\tz-index: 10;\n\tbackground: transparent;\n    cursor: pointer;\n    float: right;\n    font-size: 21px;\n    font-weight: bold;\n    line-height: 2;\n    padding: 2px 15px;\n    text-shadow: 0 1px 0 #000;\n    opacity: 0.7;\n    border: 0px;\n}\n\n.popup_close-icon {\n\n}\n\n.schedule-popup__lecturer {\n\tbackground-color: red;\n\ttext-align: center;\n\tpadding: 20px 0px;\n\tfont-size: 1.6rem;\n}\n\n.schedule-popup__img-wrapper {\n    text-align: center;\n    padding: 10px 0;\n}\n\n.schedule-popup__img {\n    max-width:45%;\n}\n\n.schedule-popup__description {\n\tpadding: 0 20px;\n\tdisplay: inline-block;\n}", ""]);
 
 // exports
 
